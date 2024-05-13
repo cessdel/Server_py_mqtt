@@ -13,26 +13,25 @@ mqtt_topics = localStorage.getItem('mqtt_topics')
 class TopicItem(BaseModel):
     topico: str
     
+
 async def subscribe_topics(topicos):
-    async with aiomqtt.Client(hostname=mqtt_broker, port=int(mqtt_port)) as client:
+    async with aiomqtt.Client(hostname= mqtt_broker, port= int(mqtt_port)) as client:
         for topic_item in topicos:
             await client.subscribe(topic_item)
             print(f"Suscrito al tópico: {topic_item}")
-    return "Suscrito a los tópicos"
 
-async def handle_messages():
-    async with aiomqtt.Client(hostname=mqtt_broker, port=int(mqtt_port)) as client:
         async for message in client.messages:
             print(f"Mensaje recibido en el tópico {message.topic}: {message.payload.decode()}")
             #guardar_en_mysql(message.payload.decode())
             payload = message.payload.decode('utf-8').strip("'b")  # Convertir el payload a cadena de texto
-            id_dispositivo, sensor, mensaje = payload.split(":")
-            print("Id    ", id_dispositivo)  # Separar el ID del dispositivo y el mensaje
-            print("Mensaje    ", mensaje)
-            print("Sensor    ", sensor)
+            id_dispositivo,sensor, mensaje = payload.split(":")
+            print("Id    ",id_dispositivo)# Separar el ID del dispositivo y el mensaje
+            print("Mensaje    ",mensaje)
+            print("Sensor    ",sensor)
             print(type(message.topic))
             print(message.topic)
-            databseConn.guardar_en_mysql(message.topic, id_dispositivo, sensor, mensaje)
+            databseConn.guardar_en_mysql(message.topic,id_dispositivo,sensor,mensaje)
+        
 
 if sys.platform.lower() == "win32" or os.name.lower() == "nt":
     from asyncio import set_event_loop_policy, WindowsSelectorEventLoopPolicy

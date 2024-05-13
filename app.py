@@ -6,8 +6,10 @@ from typing import List
 from fastapi import FastAPI, HTTPException, Request
 import databseConn
 from fastapi import FastAPI
-from mqtt_suscriber import TopicItem, handle_messages, subscribe_topics
 from localStoragePy import localStoragePy
+
+from mqtt_suscriber import subscribe_topics
+from vars.model import GetConfig
 
 app = FastAPI()
 
@@ -52,8 +54,8 @@ async def CreateConfig(request: Request):
     topicos_lista = mqtt_topics.strip('][').split(', ')
     topicos_lista = [elemento.strip("'") for elemento in topicos_lista]
     #SUBSCRIBE TO TOPICS
-    await subscribe_topics(topicos_lista)
-    asyncio.create_task(handle_messages())
+    #await subscribe_topics(topicos_lista)
+    asyncio.create_task(subscribe_topics(topicos_lista))
     return {"message": "Configuracion recibida", "data": body}
 def intentarConfiguracion():
     
@@ -64,24 +66,8 @@ def intentarConfiguracion():
 
 
 @app.get("/config")
-async def GetConfig():
-    mqtt_broker = localStorage.getItem('mqtt_broker')
-    mqtt_port = localStorage.getItem('mqtt_port')
-    mysql_host = localStorage.getItem('mysql_host')
-    mysql_user = localStorage.getItem('mysql_user')
-    mysql_password = localStorage.getItem('mysql_password')
-    mysql_db = localStorage.getItem('mysql_db')
-    mqtt_topics = localStorage.getItem('mqtt_topics')
-    print(mqtt_topics)
-    topicos_lista = mqtt_topics.strip('][').split(', ')
-    topicos_lista = [elemento.strip("'") for elemento in topicos_lista]
-    print(topicos_lista)
-    print(type(topicos_lista))
-    result = await subscribe_topics(topicos_lista)
-    print(result)
-    return {"message": "Se obtuvo la configuracion", "data": {"mqtt_broker": mqtt_broker, "mqtt_port": mqtt_port, "mysql_host": mysql_host, "mysql_user": mysql_user, "mysql_password": mysql_password, "mysql_db": mysql_db, "mqtt_topics": mqtt_topics}}
-
-
+def returnConfig():
+    return GetConfig()
 
 
 
