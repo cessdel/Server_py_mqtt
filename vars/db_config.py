@@ -1,10 +1,13 @@
 import mysql.connector
+from localStoragePy import localStoragePy
 
+localStorage = localStoragePy('my_app_namespace', 'json')
 # Definir variables de conexión
-DB_HOST = "localhost"
-DB_USER = "root"
-DB_PASSWORD = ""
-DB_NAME = "test"
+DB_HOST = localStorage.getItem('mysql_host')
+DB_USER = localStorage.getItem('mysql_user')
+DB_PASSWORD = localStorage.getItem('mysql_password')
+DB_NAME = localStorage.getItem('mysql_db')
+
 
 # Función para obtener la conexión a la base de datos
 def get_db_connection():

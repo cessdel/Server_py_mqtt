@@ -1,26 +1,19 @@
-import sys, os
+import asyncio
+import multiprocessing
+import sys, os, json
+import threading
 from typing import List
 from fastapi import FastAPI, HTTPException, Request
 import databseConn
-
-from mqtt_suscriber import TopicItem, subscribe_topics
-
+from fastapi import FastAPI
+from mqtt_suscriber import TopicItem, handle_messages, subscribe_topics
 from localStoragePy import localStoragePy
-
 
 app = FastAPI()
 
 subscription_active = False
-
+topicos_lista = []
 localStorage = localStoragePy('my_app_namespace', 'json')
-
-
-@app.post("/subscribe/")
-async def handle_subscription(topics: List[TopicItem]):
-    global subscription_active
-    subscription_active = True
-    result = await subscribe_topics(topics)
-    return result
 
 
 @app.get("/active")
@@ -37,8 +30,10 @@ def ping():
     return {"message": "Servidor en línea"}
 
 
-@app.post("/MqttConfig")
+@app.post("/config")
 async def CreateConfig(request: Request):
+    global subscription_active
+    subscription_active = True
     body = await request.json()
     #SET ITEM FROM BODY
     localStorage.setItem('mqtt_broker', body["mqtt_broker"])
@@ -49,10 +44,27 @@ async def CreateConfig(request: Request):
     localStorage.setItem('mysql_db', body["mysql_db"])
     localStorage.setItem('mqtt_topics', body["mqtt_topics"])
     print("Configuracion recibida")
+    print("Probando configuracion")
+    # Verificar la conexión a la base de datos y a internet
+    intentarConfiguracion()
+    mqtt_topics = localStorage.getItem('mqtt_topics')
+    print(mqtt_topics)
+    topicos_lista = mqtt_topics.strip('][').split(', ')
+    topicos_lista = [elemento.strip("'") for elemento in topicos_lista]
+    #SUBSCRIBE TO TOPICS
+    await subscribe_topics(topicos_lista)
+    asyncio.create_task(handle_messages())
     return {"message": "Configuracion recibida", "data": body}
+def intentarConfiguracion():
+    
+    if databseConn.verificar_conexion() and databseConn.verificar_conexion_internet():
+        return True
+    else:
+        return False
 
-@app.get("/MqttConfig")
-def GetConfig():
+
+@app.get("/config")
+async def GetConfig():
     mqtt_broker = localStorage.getItem('mqtt_broker')
     mqtt_port = localStorage.getItem('mqtt_port')
     mysql_host = localStorage.getItem('mysql_host')
@@ -60,14 +72,22 @@ def GetConfig():
     mysql_password = localStorage.getItem('mysql_password')
     mysql_db = localStorage.getItem('mysql_db')
     mqtt_topics = localStorage.getItem('mqtt_topics')
+    print(mqtt_topics)
+    topicos_lista = mqtt_topics.strip('][').split(', ')
+    topicos_lista = [elemento.strip("'") for elemento in topicos_lista]
+    print(topicos_lista)
+    print(type(topicos_lista))
+    result = await subscribe_topics(topicos_lista)
+    print(result)
     return {"message": "Se obtuvo la configuracion", "data": {"mqtt_broker": mqtt_broker, "mqtt_port": mqtt_port, "mysql_host": mysql_host, "mysql_user": mysql_user, "mysql_password": mysql_password, "mysql_db": mysql_db, "mqtt_topics": mqtt_topics}}
 
-    
+
+
+
+
+
 if __name__ == "__main__":
     import uvicorn
+    multiprocessing.freeze_support()
     print("-----------------Servidor iniciado----------------")
-    # Verificar la conexión a la base de datos y a internet
-    #databseConn.verificar_conexion()
-    #databseConn.verificar_conexion_internet()
-    print("Esperando mensajes MQTT...")
     uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True)
