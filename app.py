@@ -1,4 +1,5 @@
 import asyncio
+from contextlib import asynccontextmanager
 import multiprocessing
 import sys, os, json
 import threading
@@ -18,6 +19,7 @@ topicos_lista = []
 localStorage = localStoragePy('my_app_namespace', 'json')
 
 
+
 @app.get("/active")
 async def active():
     global subscription_active
@@ -31,6 +33,26 @@ def ping():
     print("Ping")
     return {"message": "Servidor en línea"}
 
+@app.on_event("startup")
+async def startup_event():
+    # Verificar si hay datos guardados en localStoragePy al iniciar el servidor
+    if localStorage:
+        data = localStorage.getItem("mqtt_broker")
+        if data:
+            print("Configuracion encontrada en, reiniando la suscripcion")
+            mqtt_topics = localStorage.getItem('mqtt_topics')
+            print(mqtt_topics)
+            topicos_lista = mqtt_topics.strip('][').split(', ')
+            topicos_lista = [elemento.strip("'") for elemento in topicos_lista]
+            #SUBSCRIBE TO TOPICS
+            #await subscribe_topics(topicos_lista)
+            asyncio.create_task(subscribe_topics(topicos_lista))
+                    
+        else:
+            print("No se encontraron datos en localStoragePy.")
+    else:
+        print("No se pudo acceder a localStoragePy.")
+    
 
 @app.post("/config")
 async def CreateConfig(request: Request):
@@ -66,8 +88,9 @@ def intentarConfiguracion():
 
 
 @app.get("/config")
-def returnConfig():
-    return GetConfig()
+async def returnConfig():
+    c = await GetConfig()
+    return c
 
 
 
