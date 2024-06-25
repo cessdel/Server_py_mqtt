@@ -1,42 +1,80 @@
-# Project Name
 
-SERVER_PY_MQTT
+# Servidor FastAPI con MQTT para Raspberry Pi 4
 
-# Description
+Este proyecto implementa un servidor FastAPI que interactúa con MQTT para gestionar mensajes publicados por sistemas embebidos y almacenarlos en una base de datos. Está optimizado para ejecutarse en una Raspberry Pi 4 y cuenta con una función de automatización para simplificar la configuración
 
-Este proyecto consiste en una aplicación que recopila datos de sensores a través de MQTT y los almacena en una base de datos utilizando FastAPI.
 
-## Table of Contents
+## Features
 
-- [Installation](#installation)
-- [Contributing](#contributing)
-- [License](#license)
+- Servidor FastAPI: API RESTful de alto rendimiento para manejar solicitudes y respuestas.
+- Integración MQTT: Suscripción a tópicos MQTT, recepción de mensajes y procesamiento eficiente.
+- Almacenamiento en base de datos: Guarda los datos recibidos a través de MQTT en una base de datos persistente.
+- Automatización: Endpoint para configurar fácilmente parámetros clave como la conexión a la base de datos, la dirección IP del broker MQTT y los tópicos de interés.
+- Optimizado para Raspberry Pi 4: Diseño ligero y eficiente para aprovechar al máximo los recursos de la Raspberry Pi.
 
+
+## Requisitos
+
+- Raspberry Pi 4: El proyecto está diseñado específicamente para este modelo.
+- Mosquitto: Asegúrate de tener instalado el broker MQTT Mosquitto en tu Raspberry Pi. Puedes instalarlo con el siguiente comando:
+
+```bash
+  sudo apt-get install mosquitto mosquitto-clients
+
+```
+[install mosquitto](https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/)
+
+- InfluxDB
+```bash
+wget -qO- https://repos.influxdata.com/influxdb.key | sudo apt-key add -
+source /etc/os-release
+echo "deb https://repos.influxdata.com/${ID} ${VERSION_CODENAME} stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
+
+# Actualizar e instalar InfluxDB
+sudo apt-get update && sudo apt-get install influxdb
+
+
+```
 ## Installation
 
-    Instalar mosquitto [Download](https://mosquitto.org/download/)
-    Añadir ruta a PATH
-    Agregar reglas de entrada y salida en firewall al puerto 1883
-    Añadir el siguiente codigo a /mosquitto/mosquitto.conf
-        listener 1883
-        allow_anonymous true
+1 Instala el proyecto, clonando el repositorio
 
-    net start mosquitto
+```bash
+  git clone https://github.com/cessdel/Server_py_mqtt.git
+```
+2 Instala las dependencias
 
-    Modificar credenciales de acceso a base de datos (host, user, pass, db)
+```bash
+    cd tu_repositorio
+    pip install -r requirements.txt
 
-    Crear entorno virtual
-    Installar las dependencias necesarias:
+```
 
-        ```bash
-        pip install -r requirements.txt
-        ```
-    Ejectutar servidor 
-        ```bash
-        python app.py
-        ```
-    
+## Deployment
+1 Inicia Servidor
+
+```bash
+uvicorn main:app --reload
+```
+1.1 Envía mensajes MQTT: Publica mensajes en los tópicos especificados en la configuración. El servidor los recibirá, procesará y almacenará en la base de datos.
+
+
+2 Endpoint de automatización: Utiliza el endpoint /config para enviar un JSON con la siguiente estructura
+```bash
+{
+  "mqtt_broker": "yourBoker",
+  "mqtt_port": "brokerPort",
+  "mysql_host": "influxHost",
+  "mysql_user": "influxUser",
+  "mysql_password": "influxPassword",
+  "mysql_db": "InfluxDB",
+  "mqtt_topics": ["topic1", "topic2","topic3", "more topics"]
+}
+```
+
 ## Contributing
 
-Las contribuciones son bienvenidas! Si desea contribuir a este proyecto, por favor abra un problema o envíe una solicitud de extracción con sus cambios.
+Las contribuciones son bienvenidas! 
+
+Si encuentras errores o tienes ideas para mejorar el proyecto, no dudes en abrir un issue o enviar un pull request.
 
