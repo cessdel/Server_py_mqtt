@@ -28,7 +28,6 @@ async def subscribe_topics(topicos):
             print("Id    ",id_dispositivo)# Separar el ID del dispositivo y el mensaje
             print("Mensaje    ",mensaje)
             print("Sensor    ",sensor)
-            print(type(message.topic))
             print(message.topic)
             databseConn.guardar_en_mysql(message.topic,id_dispositivo,sensor,mensaje)
         
