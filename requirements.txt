@@ -8,3 +8,5 @@ mysql-connector-python
 asyncio-mqtt
 aiomqtt
 localstoragePy
+pyTelegramBotAPI
+influxdb-client

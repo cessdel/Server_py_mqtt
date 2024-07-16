@@ -1,8 +1,9 @@
 import asyncio
 import aiomqtt,os, sys
 from pydantic import BaseModel
-import databseConn
 from localStoragePy import localStoragePy
+
+from vars.db_config import guardar_en_influxdb
 
 localStorage = localStoragePy('my_app_namespace', 'json')
 mqtt_broker = localStorage.getItem('mqtt_broker')
@@ -28,8 +29,9 @@ async def subscribe_topics(topicos):
             print("Id    ",id_dispositivo)# Separar el ID del dispositivo y el mensaje
             print("Mensaje    ",mensaje)
             print("Sensor    ",sensor)
+            print(type(message.topic))
             print(message.topic)
-            databseConn.guardar_en_mysql(message.topic,id_dispositivo,sensor,mensaje)
+            guardar_en_influxdb(message.topic,id_dispositivo,sensor,mensaje)
         
 
 if sys.platform.lower() == "win32" or os.name.lower() == "nt":

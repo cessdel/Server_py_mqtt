@@ -8,9 +8,11 @@ from fastapi import FastAPI, HTTPException, Request
 import databseConn
 from fastapi import FastAPI
 from localStoragePy import localStoragePy
-
 from mqtt_suscriber import subscribe_topics
 from vars.model import GetConfig
+from bot_config import bot
+import telebot
+
 
 app = FastAPI()
 
@@ -18,7 +20,11 @@ subscription_active = False
 topicos_lista = []
 localStorage = localStoragePy('my_app_namespace', 'json')
 
-
+def run_bot_polling():  
+    try:
+        bot.infinity_polling()  
+    except Exception as e:
+        print(f"Error en el bot: {e}")  
 
 @app.get("/active")
 async def active():
@@ -33,8 +39,23 @@ def ping():
     print("Ping")
     return {"message": "Servidor en línea"}
 
+@app.get("/status_bot")  
+def status_bot():
+    if bot.get_updates():
+        return {"status": "activo"}  # Verificar si hay actualizaciones recientes
+    else:
+        return {"status": "inactivo"}
+                
+
+@app.get("/send_message")
+def enviar():
+    bot.send_message(931490402, "Hola desde FastAPI")
+    return {"message": "Mensaje enviado"}
+
 @app.on_event("startup")
 async def startup_event():
+    process = multiprocessing.Process(target=run_bot_polling)
+    process.start()
     # Verificar si hay datos guardados en localStoragePy al iniciar el servidor
     if localStorage:
         data = localStorage.getItem("mqtt_broker")
@@ -53,6 +74,7 @@ async def startup_event():
     else:
         print("No se pudo acceder a localStoragePy.")
     
+    
 
 @app.post("/config")
 async def CreateConfig(request: Request):
@@ -62,10 +84,11 @@ async def CreateConfig(request: Request):
     #SET ITEM FROM BODY
     localStorage.setItem('mqtt_broker', body["mqtt_broker"])
     localStorage.setItem('mqtt_port', body["mqtt_port"])
-    localStorage.setItem('mysql_host', body["mysql_host"])
-    localStorage.setItem('mysql_user', body["mysql_user"])
-    localStorage.setItem('mysql_password', body["mysql_password"])
-    localStorage.setItem('mysql_db', body["mysql_db"])
+    localStorage.setItem('influx_host', body["influx_host"])
+    localStorage.setItem('influx_port', body["influx_port"])
+    localStorage.setItem('influx_token', body["influx_token"])
+    localStorage.setItem('influx_org', body["influx_org"])
+    localStorage.setItem('influx_bucket', body["influx_bucket"])
     localStorage.setItem('mqtt_topics', body["mqtt_topics"])
     print("Configuracion recibida")
     print("Probando configuracion")
@@ -92,11 +115,9 @@ async def returnConfig():
     c = await GetConfig()
     return c
 
-
-
-
 if __name__ == "__main__":
     import uvicorn
     multiprocessing.freeze_support()
     print("-----------------Servidor iniciado----------------")
     uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True)
+
