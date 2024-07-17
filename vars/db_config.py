@@ -46,17 +46,7 @@ def check_influxdb_connection():
 
 def guardar_en_influxdb(topico, id, sensor, mensaje):
     intentos = 0
-    
-#     # Configuración de InfluxDB (reemplaza con tus datos)
-#     url = "http://localhost:8086"  # URL de tu servidor InfluxDB
 
-#     token = os.environ.get("INFLUXDB_TOKEN")
-#     token="Qb1B849NA0BZRxtwv_NApXkVC_GcTwYIRJnA7IU9alSNlqeH0vF1PHsQwYe3cHR4u2tytcExzMEyuw9Tyx0fUQ=="
-#     print(token)
-
-# # Token de autenticación
-#     org = "SmartHome"        # Organización en InfluxDB
-#     bucket = "smartHomeData"          # Bucket donde guardarás los datos
     host=DB_HOST
     port=DB_PORT
     url=f'http://{host}:{port}'
@@ -70,8 +60,9 @@ def guardar_en_influxdb(topico, id, sensor, mensaje):
 
                 point = Point(topico) \
                     .tag("id_dispositivo", id) \
-                    .field(sensor, mensaje) \
-                    .time(datetime.utcnow(), WritePrecision.NS)
+                        .tag("sensor", sensor) \
+                            .field("valor", mensaje) \
+                                .time(datetime.utcnow(), WritePrecision.NS)
                 
                 write_api.write(bucket=bucket, org=org, record=point)
 

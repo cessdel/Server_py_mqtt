@@ -28,6 +28,7 @@ async def subscribe_topics(topicos):
             id_dispositivo,sensor, mensaje = payload.split(":")
             print("Id    ",id_dispositivo)# Separar el ID del dispositivo y el mensaje
             print("Mensaje    ",mensaje)
+            mensaje = float(mensaje)
             print("Sensor    ",sensor)
             print(type(message.topic))
             print(message.topic)

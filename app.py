@@ -1,16 +1,17 @@
 import asyncio
 from contextlib import asynccontextmanager
+import logging
 import multiprocessing
 import sys, os, json
 import threading
 from typing import List
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import BackgroundTasks, FastAPI, HTTPException, Request
 import databseConn
 from fastapi import FastAPI
 from localStoragePy import localStoragePy
 from mqtt_suscriber import subscribe_topics
 from vars.model import GetConfig
-from bot_config import bot
+from bot_config import bot # Importar el bot y funciones adicionales desde bot_config
 import telebot
 
 
@@ -22,9 +23,18 @@ localStorage = localStoragePy('my_app_namespace', 'json')
 
 def run_bot_polling():  
     try:
+        print("Bot corriendo")
         bot.infinity_polling()  
+        
     except Exception as e:
         print(f"Error en el bot: {e}")  
+        
+
+# Configuración del logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+
+
 
 @app.get("/active")
 async def active():
@@ -56,6 +66,9 @@ def enviar():
 async def startup_event():
     process = multiprocessing.Process(target=run_bot_polling)
     process.start()
+    
+
+    
     # Verificar si hay datos guardados en localStoragePy al iniciar el servidor
     if localStorage:
         data = localStorage.getItem("mqtt_broker")
