@@ -21,6 +21,7 @@ comandos = {
     '/start': lambda message: bot.reply_to(message, "Bienvenido al bot. Usa /help para ver los comandos disponibles."),
     '/help': lambda message: bot.reply_to(message, "Comandos disponibles:\n/start - Iniciar el bot\n/help - Mostrar ayuda\n/saludo - Enviar un saludo personalizado"),
     '/saludo': lambda message: bot.reply_to(message, f"Hola, {message.from_user.first_name}!")
+    #'/chatid': lambda message: bot.reply_to(message, f"Tu chat ID es: {message.chat.id}")
 }
 
 # Manejador de comandos

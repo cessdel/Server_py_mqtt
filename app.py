@@ -59,7 +59,13 @@ def status_bot():
 
 @app.get("/send_message")
 def enviar():
-    bot.send_message(931490402, "Hola desde FastAPI")
+    bot.send_message(-1002192376495, """⚠️ Alerta de Emergencia ⚠️
+
+Sensor:Botón de emergencia habitacion 3
+Valor: Pulso detectado
+Fecha/Hora: 2024-07-18 12:35
+
+¡El residente podría necesitar ayudar!")""")
     return {"message": "Mensaje enviado"}
 
 @app.on_event("startup")
