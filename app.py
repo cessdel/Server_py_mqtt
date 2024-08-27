@@ -10,9 +10,25 @@ import databseConn
 from fastapi import FastAPI
 from localStoragePy import localStoragePy
 from mqtt_suscriber import subscribe_topics
+from telegram_bot import send_alert
 from vars.model import GetConfig
 from bot_config import bot # Importar el bot y funciones adicionales desde bot_config
 import telebot
+
+# Configuración del logger
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler("server.log"),
+        logging.StreamHandler()
+    ]
+)
+
+# Ajusta el nivel de logging para 'watchfiles' a WARNING
+logging.getLogger('watchfiles').setLevel(logging.WARNING)
+logger = logging.getLogger(__name__)
+logger.info("Inicio de la aplicación - Verificando configuración del archivo de log")
 
 
 app = FastAPI()
@@ -29,21 +45,8 @@ def run_bot_polling():
     except Exception as e:
         print(f"Error en el bot: {e}")  
         
-import watchfiles  # Asegúrate de importar la biblioteca que está generando los logs
 
-# Configuración del logger
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler("bot.log"),
-        logging.StreamHandler()
-    ]
-)
 
-# Ajusta el nivel de logging para 'watchfiles' a WARNING
-logging.getLogger('watchfiles').setLevel(logging.WARNING)
-logger = logging.getLogger(__name__)
 
 @app.get("/active")
 async def active():
@@ -70,17 +73,8 @@ def status_bot():
 
 @app.get("/send_message")
 def enviar():
-    logger.info("Enviando mensaje")
-    TELEGRAM_ID = int(localStorage.getItem('telegram_ID'))
-    
-    bot.send_message(TELEGRAM_ID, """⚠️ Alerta de Emergencia ⚠️
-
-Sensor:Sensor de temperatura habitacion 1
-Valor: La temperatura ha superado el umbral de 30°C
-Fecha/Hora: 2024-08-18 14:03
-
-¡Se debería atender la situación !")""")
-    return {"message": "Mensaje enviado"}
+    logger.info("Enviando mensaje de prueba")
+    send_alert("Hola, soy un mensaje de prueba")
 
 @app.on_event("startup")
 async def startup_event():

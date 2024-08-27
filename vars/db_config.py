@@ -1,5 +1,6 @@
-from influxdb_client import InfluxDBClient, Point
+from influxdb_client import InfluxDBClient, Point, QueryApi
 from influxdb_client.client.exceptions import InfluxDBError
+
 import influxdb_client
 import mysql.connector
 from localStoragePy import localStoragePy
@@ -15,6 +16,43 @@ DB_HOST = localStorage.getItem('influx_host')
 DB_ORG = localStorage.getItem('influx_org')
 DB_TOKEN = localStorage.getItem('influx_token')
 DB_BUCKET = localStorage.getItem('influx_bucket')
+url=f'http://{str(DB_HOST)}:{str(DB_PORT)}'
+
+client = InfluxDBClient(url, token=DB_TOKEN, org=DB_ORG)
+query_api = client.query_api()
+
+#Funcion para obtener los datos de los sensores
+def get_latest_sensor_data(topic: str) -> str:
+    query = f"""
+    from(bucket: "{DB_BUCKET}")
+    |> range(start: -1h)
+    |> filter(fn: (r) => r._measurement == "{topic}")
+    |> last()
+    """
+    
+    #print("Consulta Flux:", query)  # Imprimir consulta para depuración
+    
+    try:
+        tables = query_api.query(query, org=DB_ORG)
+        result = ""
+        
+        for table in tables:
+            for record in table.records:
+                result = (f"Último dato para {topic}:\n"
+                        f"Valor: {record.get_value()} {record.get_field()}\n"
+                        f"Fecha: {record.get_time()}")
+                return result
+        
+        return f"No se encontró información para {topic}"
+    
+    except Exception as e:
+        print(f"Error al consultar la información de {topic}: {e}")
+        return "Error al consultar la información."
+    
+
+# Cierra el cliente después de realizar todas las consultas necesarias
+def close_client():
+    client.close()
 
 
 # Función para obtener la conexión a la base de datos
