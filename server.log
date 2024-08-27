@@ -5580,3 +5580,242 @@ requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.telegram.org'
 
 2024-08-27 10:06:50,916 - TeleBot - ERROR - Infinity polling: polling exited
 2024-08-27 10:06:50,916 - TeleBot - ERROR - Break infinity polling
+2024-08-27 10:25:49,803 - __main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-08-27 10:25:49,881 - __main__ - INFO - Servidor iniciado
+2024-08-27 10:25:50,955 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-08-27 10:25:51,067 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-08-27 10:25:51,071 - app - INFO - Bot iniciado
+2024-08-27 10:25:51,071 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-08-27 10:25:51,077 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-08-27 10:25:51,077 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-08-27 10:25:51,077 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-08-27 10:25:51,077 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-08-27 10:25:51,079 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-08-27 10:25:51,079 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-08-27 10:25:51,080 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-08-27 10:25:51,081 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-08-27 10:25:51,093 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-08-27 10:25:51,093 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-08-27 10:25:51,094 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-08-27 10:25:51,094 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-08-27 10:25:51,094 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-08-27 10:25:51,094 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 27 Aug 2024 16:25:51 GMT
+2024-08-27 10:25:51,095 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-08-27 10:25:51,095 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-08-27 10:25:51,098 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-08-27 10:25:51,262 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8744
+2024-08-27 10:25:51,264 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-08-27 10:25:52,205 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-08-27 10:25:52,207 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-08-27 10:26:20,212 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<subscribe_topics() done, defined at C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py:48> exception=TypeError("object bool can't be used in 'await' expression")>
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py", line 56, in subscribe_topics
+    await manejar_mensaje(message)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py", line 45, in manejar_mensaje
+    await guardar_en_influxdb(message.topic, id_dispositivo, sensor, mensaje)
+TypeError: object bool can't be used in 'await' expression
+2024-08-27 10:27:17,541 - TeleBot - ERROR - Infinity polling: polling exited
+2024-08-27 10:27:17,542 - TeleBot - ERROR - Break infinity polling
+2024-08-27 10:27:18,900 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-08-27 10:27:18,981 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-08-27 10:27:18,988 - app - INFO - Bot iniciado
+2024-08-27 10:27:18,988 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-08-27 10:27:18,989 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-08-27 10:27:18,990 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-08-27 10:27:18,990 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-08-27 10:27:18,990 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-08-27 10:27:18,990 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-08-27 10:27:18,991 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-08-27 10:27:18,991 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-08-27 10:27:18,991 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-08-27 10:27:19,014 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-08-27 10:27:19,014 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-08-27 10:27:19,014 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-08-27 10:27:19,014 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-08-27 10:27:19,015 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-08-27 10:27:19,015 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 27 Aug 2024 16:27:19 GMT
+2024-08-27 10:27:19,015 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-08-27 10:27:19,015 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-08-27 10:27:19,017 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-08-27 10:27:19,182 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8731
+2024-08-27 10:27:19,183 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-08-27 10:27:20,047 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-08-27 10:27:20,049 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-08-27 10:27:40,740 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<subscribe_topics() done, defined at C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py:48> exception=TypeError("object bool can't be used in 'await' expression")>
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py", line 56, in subscribe_topics
+    await manejar_mensaje(message)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py", line 41, in manejar_mensaje
+    await guardar_en_influxdb(message.topic, id_dispositivo, sensor, mensaje)
+TypeError: object bool can't be used in 'await' expression
+2024-08-27 10:28:19,924 - TeleBot - ERROR - Infinity polling: polling exited
+2024-08-27 10:28:19,924 - TeleBot - ERROR - Break infinity polling
+2024-08-27 10:28:21,108 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-08-27 10:28:21,191 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-08-27 10:28:21,197 - app - INFO - Bot iniciado
+2024-08-27 10:28:21,198 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-08-27 10:28:21,199 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-08-27 10:28:21,199 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-08-27 10:28:21,199 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-08-27 10:28:21,199 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-08-27 10:28:21,201 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-08-27 10:28:21,201 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-08-27 10:28:21,202 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-08-27 10:28:21,202 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-08-27 10:28:21,207 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-08-27 10:28:21,208 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-08-27 10:28:21,208 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-08-27 10:28:21,208 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-08-27 10:28:21,209 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-08-27 10:28:21,209 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 27 Aug 2024 16:28:21 GMT
+2024-08-27 10:28:21,209 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-08-27 10:28:21,209 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-08-27 10:28:21,212 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-08-27 10:28:21,393 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8712
+2024-08-27 10:28:21,396 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-08-27 10:28:22,201 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-08-27 10:28:22,205 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-08-27 10:28:35,148 - TeleBot - ERROR - Infinity polling: polling exited
+2024-08-27 10:28:35,150 - TeleBot - ERROR - Break infinity polling
+2024-08-27 10:28:36,323 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-08-27 10:28:36,408 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-08-27 10:28:36,413 - app - INFO - Bot iniciado
+2024-08-27 10:28:36,413 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-08-27 10:28:36,413 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-08-27 10:28:36,417 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-08-27 10:28:36,417 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-08-27 10:28:36,417 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-08-27 10:28:36,418 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-08-27 10:28:36,418 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-08-27 10:28:36,418 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-08-27 10:28:36,419 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-08-27 10:28:36,423 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-08-27 10:28:36,423 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-08-27 10:28:36,425 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-08-27 10:28:36,425 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-08-27 10:28:36,425 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-08-27 10:28:36,425 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 27 Aug 2024 16:28:36 GMT
+2024-08-27 10:28:36,425 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-08-27 10:28:36,426 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-08-27 10:28:36,429 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-08-27 10:28:36,593 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8739
+2024-08-27 10:28:36,598 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-08-27 10:28:37,445 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-08-27 10:28:37,447 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-08-27 10:28:51,207 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<subscribe_topics() done, defined at C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py:48> exception=TypeError("object bool can't be used in 'await' expression")>
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py", line 56, in subscribe_topics
+    await manejar_mensaje(message)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py", line 36, in manejar_mensaje
+    await guardar_en_influxdb(message.topic, id_dispositivo, sensor, mensaje)
+TypeError: object bool can't be used in 'await' expression
+2024-08-27 10:29:14,175 - TeleBot - ERROR - Infinity polling: polling exited
+2024-08-27 10:29:14,175 - TeleBot - ERROR - Break infinity polling
+2024-08-27 10:29:15,372 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-08-27 10:29:15,453 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-08-27 10:29:15,455 - app - INFO - Bot iniciado
+2024-08-27 10:29:15,455 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-08-27 10:29:15,455 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-08-27 10:29:15,463 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-08-27 10:29:15,463 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-08-27 10:29:15,463 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-08-27 10:29:15,463 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-08-27 10:29:15,463 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-08-27 10:29:15,464 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-08-27 10:29:15,464 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-08-27 10:29:15,468 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-08-27 10:29:15,468 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-08-27 10:29:15,468 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-08-27 10:29:15,468 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-08-27 10:29:15,468 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-08-27 10:29:15,470 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 27 Aug 2024 16:29:15 GMT
+2024-08-27 10:29:15,471 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-08-27 10:29:15,471 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-08-27 10:29:15,474 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-08-27 10:29:15,624 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8682
+2024-08-27 10:29:15,625 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-08-27 10:29:16,457 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-08-27 10:29:16,457 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-08-27 10:29:27,130 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<subscribe_topics() done, defined at C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py:48> exception=TypeError("object bool can't be used in 'await' expression")>
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py", line 56, in subscribe_topics
+    await manejar_mensaje(message)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py", line 36, in manejar_mensaje
+    await guardar_en_influxdb(message.topic, id_dispositivo, sensor, mensaje)
+TypeError: object bool can't be used in 'await' expression
+2024-08-27 10:29:44,172 - TeleBot - ERROR - Infinity polling: polling exited
+2024-08-27 10:29:44,173 - TeleBot - ERROR - Break infinity polling
+2024-08-27 10:29:45,419 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-08-27 10:29:45,499 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-08-27 10:29:45,506 - app - INFO - Bot iniciado
+2024-08-27 10:29:45,506 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-08-27 10:29:45,506 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-08-27 10:29:45,507 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-08-27 10:29:45,507 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-08-27 10:29:45,507 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-08-27 10:29:45,507 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-08-27 10:29:45,508 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-08-27 10:29:45,508 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-08-27 10:29:45,509 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-08-27 10:29:45,514 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-08-27 10:29:45,514 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-08-27 10:29:45,514 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-08-27 10:29:45,514 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-08-27 10:29:45,514 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-08-27 10:29:45,515 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 27 Aug 2024 16:29:45 GMT
+2024-08-27 10:29:45,515 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-08-27 10:29:45,515 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-08-27 10:29:45,518 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-08-27 10:29:45,672 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8701
+2024-08-27 10:29:45,675 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-08-27 10:29:46,506 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-08-27 10:29:46,514 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-08-27 11:20:09,590 - asyncio - ERROR - Exception in callback BaseSelectorEventLoop.add_writer(<socket.socke...pe=1, proto=0>, <function Cli...00193842356C0>)
+handle: <Handle BaseSelectorEventLoop.add_writer(<socket.socke...pe=1, proto=0>, <function Cli...00193842356C0>)>
+Traceback (most recent call last):
+  File "c:\Users\cesar\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\Users\cesar\AppData\Local\Programs\Python\Python312\Lib\asyncio\selector_events.py", line 363, in add_writer
+    self._add_writer(fd, callback, *args)
+  File "c:\Users\cesar\AppData\Local\Programs\Python\Python312\Lib\asyncio\selector_events.py", line 315, in _add_writer
+    key = self._selector.get_key(fd)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\cesar\AppData\Local\Programs\Python\Python312\Lib\selectors.py", line 190, in get_key
+    return mapping[fileobj]
+           ~~~~~~~^^^^^^^^^
+  File "c:\Users\cesar\AppData\Local\Programs\Python\Python312\Lib\selectors.py", line 71, in __getitem__
+    fd = self._selector._fileobj_lookup(fileobj)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\cesar\AppData\Local\Programs\Python\Python312\Lib\selectors.py", line 225, in _fileobj_lookup
+    return _fileobj_to_fd(fileobj)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\cesar\AppData\Local\Programs\Python\Python312\Lib\selectors.py", line 42, in _fileobj_to_fd
+    raise ValueError("Invalid file descriptor: {}".format(fd))
+ValueError: Invalid file descriptor: -1
+2024-08-27 11:20:09,655 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<subscribe_topics() done, defined at C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py:48> exception=MqttCodeError('Unexpected disconnection')>
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py", line 54, in subscribe_topics
+    async for message in client.messages:
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\aiomqtt\client.py", line 480, in _messages
+    raise MqttError(msg)
+aiomqtt.exceptions.MqttError: Disconnected during message iteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py", line 49, in subscribe_topics
+    async with aiomqtt.Client(hostname=mqtt_broker, port=int(mqtt_port)) as client:
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\aiomqtt\client.py", line 738, in __aexit__
+    raise exc
+aiomqtt.exceptions.MqttCodeError: [code:7] The connection was lost.
