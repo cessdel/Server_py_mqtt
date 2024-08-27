@@ -1,27 +1,23 @@
 import logging
 import telebot
 import time
+from localStoragePy import localStoragePy
+
 # Configuración del bot de Telegram
-API_TOKEN = "7266018448:AAGfK6V3jROE7vL7XWjnDStlgR2WSi9u0GU"
+localStorage = localStoragePy('my_app_namespace', 'json')
+API_TOKEN  = localStorage.getItem('telegram_TOKEN')
+
 
 # Instanciar el bot
 bot = telebot.TeleBot(API_TOKEN)
 
-# Configuración del logger
-logging.basicConfig(
-    level=logging.INFO,  # Nivel de registro (INFO, DEBUG, WARNING, ERROR, CRITICAL)
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',  # Formato del mensaje de registro
-    handlers=[
-        logging.FileHandler("bot.log"),  # Registrar en un archivo llamado "bot.log"
-        logging.StreamHandler()  # Registrar también en la consola
-    ]
-)
+
 # Diccionario de comandos y sus funciones asociadas
 comandos = {
     '/start': lambda message: bot.reply_to(message, "Bienvenido al bot. Usa /help para ver los comandos disponibles."),
     '/help': lambda message: bot.reply_to(message, "Comandos disponibles:\n/start - Iniciar el bot\n/help - Mostrar ayuda\n/saludo - Enviar un saludo personalizado"),
-    '/saludo': lambda message: bot.reply_to(message, f"Hola, {message.from_user.first_name}!")
-    #'/chatid': lambda message: bot.reply_to(message, f"Tu chat ID es: {message.chat.id}")
+    '/saludo': lambda message: bot.reply_to(message, f"Hola, {message.from_user.first_name}!"),
+    '/chatid': lambda message: bot.reply_to(message, f"Tu chat ID es: {message.chat.id}")
 }
 
 # Manejador de comandos

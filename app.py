@@ -29,12 +29,21 @@ def run_bot_polling():
     except Exception as e:
         print(f"Error en el bot: {e}")  
         
+import watchfiles  # Asegúrate de importar la biblioteca que está generando los logs
 
-# Configuración del logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+# Configuración del logger
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler("bot.log"),
+        logging.StreamHandler()
+    ]
+)
+
+# Ajusta el nivel de logging para 'watchfiles' a WARNING
+logging.getLogger('watchfiles').setLevel(logging.WARNING)
 logger = logging.getLogger(__name__)
-
-
 
 @app.get("/active")
 async def active():
@@ -46,11 +55,13 @@ async def active():
 
 @app.get("/ping")
 def ping():
+    logger.info("Ping")
     print("Ping")
     return {"message": "Servidor en línea"}
 
 @app.get("/status_bot")  
 def status_bot():
+    logger.info("Verificando estado del bot")
     if bot.get_updates():
         return {"status": "activo"}  # Verificar si hay actualizaciones recientes
     else:
@@ -59,29 +70,37 @@ def status_bot():
 
 @app.get("/send_message")
 def enviar():
-    bot.send_message(-1002192376495, """⚠️ Alerta de Emergencia ⚠️
+    logger.info("Enviando mensaje")
+    TELEGRAM_ID = int(localStorage.getItem('telegram_ID'))
+    
+    bot.send_message(TELEGRAM_ID, """⚠️ Alerta de Emergencia ⚠️
 
-Sensor:Botón de emergencia habitacion 3
-Valor: Pulso detectado
-Fecha/Hora: 2024-07-18 12:35
+Sensor:Sensor de temperatura habitacion 1
+Valor: La temperatura ha superado el umbral de 30°C
+Fecha/Hora: 2024-08-18 14:03
 
-¡El residente podría necesitar ayudar!")""")
+¡Se debería atender la situación !")""")
     return {"message": "Mensaje enviado"}
 
 @app.on_event("startup")
 async def startup_event():
     process = multiprocessing.Process(target=run_bot_polling)
     process.start()
-    
+    logger.info("Bot iniciado")
 
     
     # Verificar si hay datos guardados en localStoragePy al iniciar el servidor
     if localStorage:
         data = localStorage.getItem("mqtt_broker")
         if data:
+            logger.info("Configuracion encontrada en, reiniando la suscripcion")
             print("Configuracion encontrada en, reiniando la suscripcion")
+            global subscription_active 
+            subscription_active = True
+            print("Subscription active: ", subscription_active)
             mqtt_topics = localStorage.getItem('mqtt_topics')
             print(mqtt_topics)
+            DBstatus = intentarConfiguracion()
             topicos_lista = mqtt_topics.strip('][').split(', ')
             topicos_lista = [elemento.strip("'") for elemento in topicos_lista]
             #SUBSCRIBE TO TOPICS
@@ -97,6 +116,7 @@ async def startup_event():
 
 @app.post("/config")
 async def CreateConfig(request: Request):
+    logger.info("Configuracion recibida")
     global subscription_active
     subscription_active = True
     body = await request.json()
@@ -108,6 +128,8 @@ async def CreateConfig(request: Request):
     localStorage.setItem('influx_token', body["influx_token"])
     localStorage.setItem('influx_org', body["influx_org"])
     localStorage.setItem('influx_bucket', body["influx_bucket"])
+    localStorage.setItem('telegram_TOKEN', body["telegram_TOKEN"])
+    localStorage.setItem('telegram_ID', body["telegram_ID"])
     localStorage.setItem('mqtt_topics', body["mqtt_topics"])
     print("Configuracion recibida")
     print("Probando configuracion")
@@ -124,13 +146,16 @@ async def CreateConfig(request: Request):
 def intentarConfiguracion():
     
     if databseConn.verificar_conexion() and databseConn.verificar_conexion_internet():
+        logger.info("Conexión a la base de datos y a internet exitosa")
         return True
     else:
+        logger.error("Error en la conexión a la base de datos o a internet")
         return False
 
 
 @app.get("/config")
 async def returnConfig():
+    logger.info("Enviando configuracion")
     c = await GetConfig()
     return c
 
@@ -138,5 +163,6 @@ if __name__ == "__main__":
     import uvicorn
     multiprocessing.freeze_support()
     print("-----------------Servidor iniciado----------------")
+    logger.info("Servidor iniciado")
     uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True)
 
