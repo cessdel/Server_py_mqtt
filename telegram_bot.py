@@ -67,6 +67,21 @@ def handle_button_click(call):
         except Exception as e:
             logger.error(f"Error al enviar el mensaje de información: {e}")
 
+# Función para manejar el comando /id
+@bot.message_handler(commands=['id'])
+def handle_id_command(message):
+    user_id = message.from_user.id
+    chat_id = message.chat.id
+    response_message = (
+        f"**Tu ID de usuario:** {user_id}\n"
+        f"**ID del chat:** {chat_id}"
+    )
+    bot.send_message(
+        chat_id=message.chat.id,
+        text=response_message
+    )
+
+
 # Función para manejar el comando /start y mostrar botones
 @bot.message_handler(commands=['start'])
 def start_command(message):

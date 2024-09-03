@@ -7671,3 +7671,485 @@ telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsucc
 2024-09-03 12:10:41,146 - app - INFO - Server detenido
 2024-09-03 12:10:43,648 - TeleBot - ERROR - Infinity polling: polling exited
 2024-09-03 12:10:43,648 - TeleBot - ERROR - Break infinity polling
+2024-09-03 13:36:28,845 - root - INFO - Model loaded successfully.
+2024-09-03 13:36:28,849 - __main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 13:36:28,970 - __main__ - INFO - Servidor iniciado
+2024-09-03 13:36:34,776 - root - INFO - Model loaded successfully.
+2024-09-03 13:36:34,776 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 13:36:34,993 - root - INFO - Model loaded successfully.
+2024-09-03 13:36:34,996 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 13:36:35,010 - app - INFO - Server iniciado
+2024-09-03 13:36:35,010 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-03 13:36:35,010 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://192.168.100.79:8086/health?'
+2024-09-03 13:36:35,010 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-03 13:36:35,016 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-03 13:36:35,016 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-03 13:36:35,016 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-03 13:36:35,018 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-03 13:36:35,018 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-03 13:36:35,018 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 192.168.100.79:8086
+2024-09-03 13:36:35,035 - urllib3.connectionpool - DEBUG - http://192.168.100.79:8086 "GET /health HTTP/1.1" 200 0
+2024-09-03 13:36:35,035 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-03 13:36:35,035 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-03 13:36:35,035 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-03 13:36:35,035 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.8
+2024-09-03 13:36:35,035 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 19:36:34 GMT
+2024-09-03 13:36:35,040 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-03 13:36:35,040 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.8", "commit": "18c989726c"}
+
+2024-09-03 13:36:35,044 - root - INFO - Conexión exitosa a la base de datos
+2024-09-03 13:36:35,047 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-03 13:36:35,506 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8712
+2024-09-03 13:36:35,506 - root - INFO - Conexión a Internet exitosa
+2024-09-03 13:36:35,506 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-03 13:36:35,510 - root - INFO - Model found. Skipping initial training.
+2024-09-03 13:36:35,511 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-09-03 13:36:35,511 - root - INFO - Scheduled job to train model every day at 00:00 AM.
+2024-09-03 13:36:35,511 - apscheduler.scheduler - INFO - Added job "TemperatureModel.train_model" to job store "default"
+2024-09-03 13:36:35,513 - apscheduler.scheduler - INFO - Scheduler started
+2024-09-03 13:36:35,520 - root - INFO - Suscrito al tópico: sonido
+2024-09-03 13:36:35,521 - root - INFO - Suscrito al tópico: temperatura
+2024-09-03 13:36:35,521 - root - INFO - Suscrito al tópico: boton
+2024-09-03 13:36:35,521 - root - INFO - Suscrito al tópico: distancia
+2024-09-03 13:36:35,521 - root - INFO - Suscrito al tópico: ldr
+2024-09-03 13:36:40,219 - root - INFO - Model loaded successfully.
+2024-09-03 13:36:40,225 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 13:36:40,235 - root - INFO - Model loaded successfully.
+2024-09-03 13:36:40,242 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 13:36:40,248 - app - INFO - Bot corriendo
+2024-09-03 13:36:42,581 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-09-03 13:36:42,583 - app - INFO - Server detenido
+2024-09-03 13:36:44,550 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-03 13:36:44,550 - TeleBot - ERROR - Break infinity polling
+2024-09-03 14:10:34,817 - root - INFO - Model loaded successfully.
+2024-09-03 14:10:34,817 - __main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 14:10:34,926 - __main__ - INFO - Servidor iniciado
+2024-09-03 14:10:41,540 - root - INFO - Model loaded successfully.
+2024-09-03 14:10:41,545 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 14:10:41,757 - root - INFO - Model loaded successfully.
+2024-09-03 14:10:41,765 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 14:10:41,784 - app - INFO - Server iniciado
+2024-09-03 14:10:41,786 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-03 14:10:41,786 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://192.168.100.79:8086/health?'
+2024-09-03 14:10:41,786 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-03 14:10:41,790 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-03 14:10:41,790 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-03 14:10:41,790 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-03 14:10:41,790 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-03 14:10:41,790 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-03 14:10:41,790 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 192.168.100.79:8086
+2024-09-03 14:10:41,816 - urllib3.connectionpool - DEBUG - http://192.168.100.79:8086 "GET /health HTTP/1.1" 200 0
+2024-09-03 14:10:41,816 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-03 14:10:41,816 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-03 14:10:41,819 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-03 14:10:41,819 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.8
+2024-09-03 14:10:41,819 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 20:10:40 GMT
+2024-09-03 14:10:41,819 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-03 14:10:41,821 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.8", "commit": "18c989726c"}
+
+2024-09-03 14:10:41,822 - root - INFO - Conexión exitosa a la base de datos
+2024-09-03 14:10:41,822 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-03 14:10:42,007 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8707
+2024-09-03 14:10:42,011 - root - INFO - Conexión a Internet exitosa
+2024-09-03 14:10:42,011 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-03 14:10:42,011 - root - INFO - Model found. Skipping initial training.
+2024-09-03 14:10:42,011 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-09-03 14:10:42,011 - root - INFO - Scheduled job to train model every day at 00:00 AM.
+2024-09-03 14:10:42,011 - apscheduler.scheduler - INFO - Added job "TemperatureModel.train_model" to job store "default"
+2024-09-03 14:10:42,015 - apscheduler.scheduler - INFO - Scheduler started
+2024-09-03 14:10:42,022 - root - INFO - Suscrito al tópico: sonido
+2024-09-03 14:10:42,024 - root - INFO - Suscrito al tópico: temperatura
+2024-09-03 14:10:42,024 - root - INFO - Suscrito al tópico: boton
+2024-09-03 14:10:42,024 - root - INFO - Suscrito al tópico: distancia
+2024-09-03 14:10:42,024 - root - INFO - Suscrito al tópico: ldr
+2024-09-03 14:10:47,240 - root - INFO - Model loaded successfully.
+2024-09-03 14:10:47,242 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 14:10:47,256 - root - INFO - Model loaded successfully.
+2024-09-03 14:10:47,260 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 14:10:47,262 - app - INFO - Bot corriendo
+2024-09-03 14:10:53,322 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-03 14:10:53,326 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1214, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 676, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 648, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 330, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2024-09-03 14:10:57,486 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-03 14:10:57,489 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1214, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 676, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 648, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 330, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2024-09-03 14:11:02,429 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-03 14:11:02,432 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1214, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 676, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 648, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 330, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2024-09-03 14:11:08,877 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-03 14:11:08,882 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1214, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 676, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 648, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 330, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2024-09-03 14:11:14,814 - app - INFO - Configuracion recibida
+2024-09-03 14:11:14,826 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://192.168.100.79:8086/health?'
+2024-09-03 14:11:14,827 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-03 14:11:14,828 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-03 14:11:14,828 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-03 14:11:14,829 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-03 14:11:14,830 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-03 14:11:14,831 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-03 14:11:14,831 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 192.168.100.79:8086
+2024-09-03 14:11:14,958 - urllib3.connectionpool - DEBUG - http://192.168.100.79:8086 "GET /health HTTP/1.1" 200 0
+2024-09-03 14:11:14,958 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-03 14:11:14,959 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-03 14:11:14,959 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-03 14:11:14,961 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.8
+2024-09-03 14:11:14,962 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 20:11:13 GMT
+2024-09-03 14:11:14,963 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-03 14:11:14,964 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.8", "commit": "18c989726c"}
+
+2024-09-03 14:11:14,964 - root - INFO - Conexión exitosa a la base de datos
+2024-09-03 14:11:14,967 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-03 14:11:15,147 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8673
+2024-09-03 14:11:15,151 - root - INFO - Conexión a Internet exitosa
+2024-09-03 14:11:15,151 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-03 14:11:15,166 - root - INFO - Suscrito al tópico: sonido
+2024-09-03 14:11:15,170 - root - INFO - Suscrito al tópico: temperatura
+2024-09-03 14:11:15,170 - root - INFO - Suscrito al tópico: boton
+2024-09-03 14:11:15,173 - root - INFO - Suscrito al tópico: distancia
+2024-09-03 14:11:15,175 - root - INFO - Suscrito al tópico: ldr
+2024-09-03 14:11:15,252 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-03 14:11:15,257 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1214, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 676, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 648, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 330, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2024-09-03 14:11:27,819 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-03 14:11:27,828 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1214, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 676, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 648, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 330, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2024-09-03 14:11:39,499 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-03 14:11:39,499 - TeleBot - ERROR - Break infinity polling
+2024-09-03 14:11:39,558 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-09-03 14:11:39,558 - app - INFO - Server detenido
+2024-09-03 14:11:47,746 - root - INFO - Model loaded successfully.
+2024-09-03 14:11:47,748 - __main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 14:11:47,847 - __main__ - INFO - Servidor iniciado
+2024-09-03 14:11:53,072 - root - INFO - Model loaded successfully.
+2024-09-03 14:11:53,076 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 14:11:53,289 - root - INFO - Model loaded successfully.
+2024-09-03 14:11:53,308 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 14:11:53,323 - app - INFO - Server iniciado
+2024-09-03 14:11:53,323 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-03 14:11:53,325 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://192.168.100.79:8086/health?'
+2024-09-03 14:11:53,326 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-03 14:11:53,327 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-03 14:11:53,327 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-03 14:11:53,328 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-03 14:11:53,329 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-03 14:11:53,330 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-03 14:11:53,331 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 192.168.100.79:8086
+2024-09-03 14:11:53,359 - urllib3.connectionpool - DEBUG - http://192.168.100.79:8086 "GET /health HTTP/1.1" 200 0
+2024-09-03 14:11:53,359 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-03 14:11:53,359 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-03 14:11:53,359 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-03 14:11:53,359 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.8
+2024-09-03 14:11:53,366 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 20:11:52 GMT
+2024-09-03 14:11:53,367 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-03 14:11:53,367 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.8", "commit": "18c989726c"}
+
+2024-09-03 14:11:53,367 - root - INFO - Conexión exitosa a la base de datos
+2024-09-03 14:11:53,374 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-03 14:11:53,566 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8714
+2024-09-03 14:11:53,566 - root - INFO - Conexión a Internet exitosa
+2024-09-03 14:11:53,566 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-03 14:11:53,566 - root - INFO - Model found. Skipping initial training.
+2024-09-03 14:11:53,571 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-09-03 14:11:53,571 - root - INFO - Scheduled job to train model every day at 00:00 AM.
+2024-09-03 14:11:53,573 - apscheduler.scheduler - INFO - Added job "TemperatureModel.train_model" to job store "default"
+2024-09-03 14:11:53,573 - apscheduler.scheduler - INFO - Scheduler started
+2024-09-03 14:11:53,578 - root - INFO - Suscrito al tópico: sonido
+2024-09-03 14:11:53,582 - root - INFO - Suscrito al tópico: temperatura
+2024-09-03 14:11:53,583 - root - INFO - Suscrito al tópico: boton
+2024-09-03 14:11:53,583 - root - INFO - Suscrito al tópico: distancia
+2024-09-03 14:11:53,583 - root - INFO - Suscrito al tópico: ldr
+2024-09-03 14:11:58,640 - root - INFO - Model loaded successfully.
+2024-09-03 14:11:58,643 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 14:11:58,655 - root - INFO - Model loaded successfully.
+2024-09-03 14:11:58,659 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 14:11:58,664 - app - INFO - Bot corriendo
+2024-09-03 14:12:04,697 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-03 14:12:04,700 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1214, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 676, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 648, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 330, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2024-09-03 14:12:08,899 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-03 14:12:08,905 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1214, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 676, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 648, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 330, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2024-09-03 14:12:13,803 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-03 14:12:13,806 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1214, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 676, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 648, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 330, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2024-09-03 14:12:20,255 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-03 14:12:20,255 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1214, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 676, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 648, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 330, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2024-09-03 14:12:26,721 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-03 14:12:26,723 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1214, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 676, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 648, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 330, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2024-09-03 14:13:45,449 - app - INFO - Configuracion recibida
+2024-09-03 14:13:45,460 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://192.168.100.79:8086/health?'
+2024-09-03 14:13:45,460 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-03 14:13:45,461 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-03 14:13:45,461 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-03 14:13:45,461 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-03 14:13:45,461 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-03 14:13:45,464 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-03 14:13:45,465 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 192.168.100.79:8086
+2024-09-03 14:13:45,489 - urllib3.connectionpool - DEBUG - http://192.168.100.79:8086 "GET /health HTTP/1.1" 200 0
+2024-09-03 14:13:45,489 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-03 14:13:45,489 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-03 14:13:45,489 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-03 14:13:45,493 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.8
+2024-09-03 14:13:45,493 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 20:13:44 GMT
+2024-09-03 14:13:45,493 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-03 14:13:45,493 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.8", "commit": "18c989726c"}
+
+2024-09-03 14:13:45,498 - root - INFO - Conexión exitosa a la base de datos
+2024-09-03 14:13:45,499 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-03 14:13:45,706 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8667
+2024-09-03 14:13:45,710 - root - INFO - Conexión a Internet exitosa
+2024-09-03 14:13:45,710 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-03 14:13:45,717 - root - INFO - Suscrito al tópico: sonido
+2024-09-03 14:13:45,717 - root - INFO - Suscrito al tópico: temperatura
+2024-09-03 14:13:45,717 - root - INFO - Suscrito al tópico: boton
+2024-09-03 14:13:45,721 - root - INFO - Suscrito al tópico: distancia
+2024-09-03 14:13:45,724 - root - INFO - Suscrito al tópico: ldr
+2024-09-03 14:13:56,018 - telegram_bot - INFO - Menú de opciones enviado a cessdel
+2024-09-03 14:14:41,834 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-09-03 14:14:41,834 - app - INFO - Server detenido
+2024-09-03 14:14:42,206 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-03 14:14:42,207 - TeleBot - ERROR - Break infinity polling
