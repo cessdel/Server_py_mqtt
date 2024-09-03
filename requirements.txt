@@ -10,3 +10,7 @@ aiomqtt
 localstoragePy
 pyTelegramBotAPI
 influxdb-client
+scikit-learn
+numpy
+APScheduler
+pandas
