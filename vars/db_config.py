@@ -1,3 +1,4 @@
+import logging
 from influxdb_client import InfluxDBClient, Point, QueryApi
 from influxdb_client.client.exceptions import InfluxDBError
 
@@ -42,10 +43,11 @@ def get_latest_sensor_data(topic: str) -> str:
                         f"Valor: {record.get_value()} {record.get_field()}\n"
                         f"Fecha: {record.get_time()}")
                 return result
-        
+        logging.error(f"No se encontró información para {topic}")
         return f"No se encontró información para {topic}"
     
     except Exception as e:
+        logging.error(f"Error al consultar la información de {topic}: {e}")
         print(f"Error al consultar la información de {topic}: {e}")
         return "Error al consultar la información."
     

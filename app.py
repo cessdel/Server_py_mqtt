@@ -2,18 +2,21 @@ import asyncio
 from contextlib import asynccontextmanager
 import logging
 import multiprocessing
-import sys, os, json
-import threading
-from typing import List
-from fastapi import BackgroundTasks, FastAPI, HTTPException, Request
+import os
+from apscheduler.triggers.cron import CronTrigger
+from fastapi import FastAPI, HTTPException, Request
+from pydantic import BaseModel
 import databseConn
 from fastapi import FastAPI
+from apscheduler.schedulers.background import BackgroundScheduler
+from contextlib import asynccontextmanager, contextmanager
 from localStoragePy import localStoragePy
 from mqtt_suscriber import subscribe_topics
 from telegram_bot import send_alert
 from vars.model import GetConfig
 from bot_config import bot # Importar el bot y funciones adicionales desde bot_config
 import telebot
+from modelos.regression import TemperatureModel
 
 # Configuración del logger
 logging.basicConfig(
@@ -25,24 +28,84 @@ logging.basicConfig(
     ]
 )
 
+model_path = "model.pkl"
+model_handler = TemperatureModel(model_path)
+class PredictionRequest(BaseModel):
+    features: list
+
 # Ajusta el nivel de logging para 'watchfiles' a WARNING
 logging.getLogger('watchfiles').setLevel(logging.WARNING)
 logger = logging.getLogger(__name__)
 logger.info("Inicio de la aplicación - Verificando configuración del archivo de log")
 
-
-app = FastAPI()
+# Configura el programador de tareas
+scheduler = BackgroundScheduler()
 
 subscription_active = False
 topicos_lista = []
 localStorage = localStoragePy('my_app_namespace', 'json')
 
+@asynccontextmanager
+async def lifespan(app:FastAPI):
+    process = multiprocessing.Process(target=run_bot_polling)
+    process.start()
+    logger.info("Server iniciado")
+
+    
+    # Verificar si hay datos guardados en localStoragePy al iniciar el servidor
+    if localStorage:
+        data = localStorage.getItem("mqtt_broker")
+        if data:
+            logger.info("Configuracion encontrada en, reiniando la suscripcion")
+            print("Configuracion encontrada en, reiniando la suscripcion")
+            global subscription_active 
+            subscription_active = True
+            print("Subscription active: ", subscription_active)
+            mqtt_topics = localStorage.getItem('mqtt_topics')
+            print(mqtt_topics)
+            DBstatus = intentarConfiguracion()
+            topicos_lista = mqtt_topics.strip('][').split(', ')
+            topicos_lista = [elemento.strip("'") for elemento in topicos_lista]
+            
+            asyncio.create_task(subscribe_topics(topicos_lista))
+                    
+        else:
+            print("No se encontraron datos en localStoragePy.")
+    else:
+        print("No se pudo acceder a localStoragePy.")
+    
+    # Verifica si el modelo ya existe
+    if not os.path.exists(model_path):
+        logging.info("Model not found. Training the model.")
+        print("Model not found. Training the model.")
+        model_handler.train_model()
+        logging.info("Initial model training completed.")
+    else:
+        logging.info("Model found. Skipping initial training.")
+        print("Model found. Skipping initial training.")
+        
+    # Agrega el trabajo al scheduler para que se ejecute a las 00:00 AM todos los días
+    scheduler.add_job(model_handler.train_model, CronTrigger(hour=0, minute=0))  # Ejecuta a las 00:00 AM
+    logging.info("Scheduled job to train model every day at 00:00 AM.")
+    
+    # Inicia el scheduler
+    scheduler.start()
+    yield
+    scheduler.shutdown()
+    logger.info("Server detenido")
+    print("Server detenido")
+    
+app = FastAPI(lifespan=lifespan)
+    
+
 def run_bot_polling():  
     try:
         print("Bot corriendo")
+        logger.info("Bot corriendo")
         bot.infinity_polling()  
         
     except Exception as e:
+        logger.error(f"Error en el bot: {e}")
         print(f"Error en el bot: {e}")  
         
 
@@ -54,6 +117,7 @@ async def active():
     if  subscription_active==False:
         raise HTTPException(status_code=400, detail="Subscription not yet activated. Please POST to /subscribe first.")
     else:
+        logger.info(" /active endpoint. ACTIVE")
         return {"message": "This is the /active endpoint."}
 
 @app.get("/ping")
@@ -76,37 +140,20 @@ def enviar():
     logger.info("Enviando mensaje de prueba")
     send_alert("Hola, soy un mensaje de prueba")
 
-@app.on_event("startup")
-async def startup_event():
-    process = multiprocessing.Process(target=run_bot_polling)
-    process.start()
-    logger.info("Bot iniciado")
+@app.get("/predict/future")
+async def predict_future_temperatures():
+    try:
+        results = model_handler.predict_future_temperatures(hours=12)  # Predice para las próximas 12 horas
+        logger.info("Future temperatures predicted.")
+        return {"future_temperatures": results}
+    except Exception as e:
+        logger.error(f"Error predicting future temperatures: {e}")
+        raise HTTPException(status_code=500, detail=f"Error predicting future temperatures: {str(e)}")
 
-    
-    # Verificar si hay datos guardados en localStoragePy al iniciar el servidor
-    if localStorage:
-        data = localStorage.getItem("mqtt_broker")
-        if data:
-            logger.info("Configuracion encontrada en, reiniando la suscripcion")
-            print("Configuracion encontrada en, reiniando la suscripcion")
-            global subscription_active 
-            subscription_active = True
-            print("Subscription active: ", subscription_active)
-            mqtt_topics = localStorage.getItem('mqtt_topics')
-            print(mqtt_topics)
-            DBstatus = intentarConfiguracion()
-            topicos_lista = mqtt_topics.strip('][').split(', ')
-            topicos_lista = [elemento.strip("'") for elemento in topicos_lista]
-            #SUBSCRIBE TO TOPICS
-            #await subscribe_topics(topicos_lista)
-            asyncio.create_task(subscribe_topics(topicos_lista))
-                    
-        else:
-            print("No se encontraron datos en localStoragePy.")
-    else:
-        print("No se pudo acceder a localStoragePy.")
-    
-    
+@app.get("/training-status")
+async def training_status():
+    logger.info("Training status")
+    return {"status": model_handler.training_status}
 
 @app.post("/config")
 async def CreateConfig(request: Request):

@@ -1,4 +1,5 @@
 import asyncio
+import logging
 import sys
 import aiomqtt
 from pydantic import BaseModel
@@ -35,12 +36,15 @@ async def manejar_mensaje(message):
         if mensaje != last_value:
             guardar_en_influxdb(message.topic, id_dispositivo, sensor, mensaje)
             last_values[key] = (mensaje, current_time)
+            logging.info("Valor enviado inmediatamente.")
         else:
             # Si el valor no ha cambiado, verificar si han pasado 10 segundos
             if current_time - last_sent_time >= timedelta(seconds=10):
                 guardar_en_influxdb(message.topic, id_dispositivo, sensor, mensaje)
                 last_values[key] = (mensaje, current_time)
+                logging.info("Valor enviado después de 10 segundos.")
     else:
+        logging.info("Primer valor recibido para este tópico.")
         # Si es la primera vez que se recibe este valor, enviarlo y guardarlo
         guardar_en_influxdb(message.topic, id_dispositivo, sensor, mensaje)
         last_values[key] = (mensaje, current_time)
@@ -50,10 +54,12 @@ async def subscribe_topics(topicos):
         for topic_item in topicos:
             await client.subscribe(topic_item)
             print(f"Suscrito al tópico: {topic_item}")
+            logging.info(f"Suscrito al tópico: {topic_item}")
 
         async for message in client.messages:
             print(f"Mensaje recibido en el tópico {message.topic}: {message.payload.decode()}")
             await manejar_mensaje(message)
+            logging.info(f"Mensaje recibido en el tópico {message.topic}: {message.payload.decode()}")
 
         
 

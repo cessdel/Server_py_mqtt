@@ -5819,3 +5819,1855 @@ Traceback (most recent call last):
   File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\aiomqtt\client.py", line 738, in __aexit__
     raise exc
 aiomqtt.exceptions.MqttCodeError: [code:7] The connection was lost.
+2024-08-27 11:25:59,701 - TeleBot - ERROR - Infinity polling: polling exited
+2024-08-27 11:25:59,701 - TeleBot - ERROR - Break infinity polling
+2024-09-02 16:16:43,405 - __main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 16:16:43,622 - __main__ - INFO - Servidor iniciado
+2024-09-02 16:16:46,396 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 16:16:46,737 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 16:17:41,556 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 16:17:51,342 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 16:17:51,557 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 16:17:51,580 - app - INFO - Bot iniciado
+2024-09-02 16:17:51,580 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 16:17:51,582 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 16:17:51,583 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 16:17:51,583 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 16:17:51,583 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 16:17:51,585 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 16:17:51,585 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 16:17:51,586 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 16:17:51,586 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 16:17:57,675 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 16:17:57,676 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 16:17:57,676 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 16:17:57,676 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 16:17:57,676 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 16:17:57,676 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 16:17:57,676 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 16:17:57,683 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 16:18:03,773 - app - ERROR - Error en la conexión a la base de datos o a internet
+2024-09-02 16:18:12,580 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 16:18:12,884 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 16:18:12,908 - app - INFO - Bot iniciado
+2024-09-02 16:18:12,909 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 16:18:12,909 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 16:18:12,909 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 16:18:12,909 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 16:18:12,909 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 16:18:12,916 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 16:18:12,916 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 16:18:12,916 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 16:18:12,916 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 16:18:19,009 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 16:18:19,010 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 16:18:19,011 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 16:18:19,012 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 16:18:19,012 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 16:18:19,012 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 16:18:19,015 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 16:18:19,016 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 16:18:25,088 - app - ERROR - Error en la conexión a la base de datos o a internet
+2024-09-02 20:37:59,973 - __main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:38:00,114 - __main__ - INFO - Servidor iniciado
+2024-09-02 20:38:03,181 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:38:03,482 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:38:03,499 - app - INFO - Bot iniciado
+2024-09-02 20:38:03,499 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 20:38:03,499 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 20:38:03,499 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 20:38:03,499 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 20:38:03,499 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 20:38:03,499 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 20:38:03,499 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 20:38:03,506 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 20:38:03,506 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 20:38:06,289 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:38:06,306 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:38:09,548 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 20:38:09,548 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 20:38:09,550 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 20:38:09,550 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 20:38:09,553 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 20:38:09,553 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 20:38:09,555 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 20:38:09,555 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 20:38:15,646 - app - ERROR - Error en la conexión a la base de datos o a internet
+2024-09-02 20:38:20,656 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<subscribe_topics() done, defined at C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py:48> exception=MqttError('timed out')>
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py", line 49, in subscribe_topics
+    async with aiomqtt.Client(hostname=mqtt_broker, port=int(mqtt_port)) as client:
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\aiomqtt\client.py", line 712, in __aenter__
+    raise MqttError(str(exc)) from None
+aiomqtt.exceptions.MqttError: timed out
+2024-09-02 20:43:38,594 - TeleBot - ERROR - Infinity polling exception: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+2024-09-02 20:43:38,600 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\urllib3\connectionpool.py", line 537, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\urllib3\connection.py", line 466, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\cesar\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1419, in getresponse
+    response.begin()
+  File "c:\Users\cesar\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\cesar\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\cesar\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\cesar\AppData\Local\Programs\Python\Python312\Lib\ssl.py", line 1253, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\cesar\AppData\Local\Programs\Python\Python312\Lib\ssl.py", line 1105, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\urllib3\util\retry.py", line 470, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\urllib3\connectionpool.py", line 539, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\urllib3\connectionpool.py", line 370, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1090, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1178, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1253, in __threaded_polling
+    raise e
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1214, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 676, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 648, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 330, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    result = _get_req_session().request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+
+2024-09-02 20:46:12,911 - app - INFO - Configuracion recibida
+2024-09-02 20:46:12,919 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 20:46:12,919 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 20:46:12,919 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 20:46:12,923 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 20:46:12,923 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 20:46:12,924 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 20:46:12,924 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 20:46:12,928 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 20:46:12,935 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-09-02 20:46:12,937 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-02 20:46:12,938 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-02 20:46:12,939 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-02 20:46:12,939 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-02 20:46:12,940 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 02:46:12 GMT
+2024-09-02 20:46:12,941 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-02 20:46:12,941 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-02 20:46:12,951 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-02 20:46:13,062 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8691
+2024-09-02 20:46:13,067 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-02 20:48:28,750 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-02 20:48:28,750 - TeleBot - ERROR - Break infinity polling
+2024-09-02 20:48:33,078 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:48:33,341 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:48:33,360 - app - INFO - Bot iniciado
+2024-09-02 20:48:33,360 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 20:48:33,368 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 20:48:33,368 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 20:48:33,368 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 20:48:33,368 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 20:48:33,368 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 20:48:33,368 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 20:48:33,378 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 20:48:33,382 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 20:48:33,395 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-09-02 20:48:33,400 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-02 20:48:33,400 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-02 20:48:33,403 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-02 20:48:33,403 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-02 20:48:33,404 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 02:48:33 GMT
+2024-09-02 20:48:33,404 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-02 20:48:33,404 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-02 20:48:33,416 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-02 20:48:33,569 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8690
+2024-09-02 20:48:33,571 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-02 20:48:36,723 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:48:36,744 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:48:41,145 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:48:41,356 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:48:41,373 - app - INFO - Bot iniciado
+2024-09-02 20:48:41,374 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 20:48:41,375 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 20:48:41,375 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 20:48:41,375 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 20:48:41,375 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 20:48:41,382 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 20:48:41,383 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 20:48:41,383 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 20:48:41,383 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 20:48:41,398 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-09-02 20:48:41,399 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-02 20:48:41,399 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-02 20:48:41,399 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-02 20:48:41,399 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-02 20:48:41,399 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 02:48:41 GMT
+2024-09-02 20:48:41,399 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-02 20:48:41,399 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-02 20:48:41,414 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-02 20:48:41,514 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8695
+2024-09-02 20:48:41,514 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-02 20:48:44,622 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:48:44,636 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:48:48,998 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-02 20:48:48,998 - TeleBot - ERROR - Break infinity polling
+2024-09-02 20:50:00,866 - __main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:50:00,976 - __main__ - INFO - Servidor iniciado
+2024-09-02 20:50:03,980 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:50:04,193 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:50:04,209 - app - INFO - Bot iniciado
+2024-09-02 20:50:04,209 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 20:50:04,211 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 20:50:04,213 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 20:50:04,214 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 20:50:04,215 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 20:50:04,215 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 20:50:04,215 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 20:50:04,221 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 20:50:04,221 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 20:50:04,235 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-09-02 20:50:04,235 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-02 20:50:04,235 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-02 20:50:04,237 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-02 20:50:04,238 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-02 20:50:04,239 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 02:50:04 GMT
+2024-09-02 20:50:04,240 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-02 20:50:04,241 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-02 20:50:04,247 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-02 20:50:04,347 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8714
+2024-09-02 20:50:04,351 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-02 20:50:07,215 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:50:07,232 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:50:48,186 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-02 20:50:48,187 - TeleBot - ERROR - Break infinity polling
+2024-09-02 20:50:51,836 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:50:52,050 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:50:52,068 - app - INFO - Bot iniciado
+2024-09-02 20:50:52,068 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 20:50:52,075 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 20:50:52,075 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 20:50:52,075 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 20:50:52,075 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 20:50:52,075 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 20:50:52,075 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 20:50:52,081 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 20:50:52,081 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 20:50:52,092 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-09-02 20:50:52,092 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-02 20:50:52,094 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-02 20:50:52,094 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-02 20:50:52,094 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-02 20:50:52,094 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 02:50:52 GMT
+2024-09-02 20:50:52,094 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-02 20:50:52,094 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-02 20:50:52,106 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-02 20:50:52,233 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8715
+2024-09-02 20:50:52,239 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-02 20:50:55,220 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:50:55,236 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:51:06,036 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-02 20:51:06,036 - TeleBot - ERROR - Break infinity polling
+2024-09-02 20:51:09,743 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:51:09,950 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:51:09,973 - app - INFO - Bot iniciado
+2024-09-02 20:51:09,973 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 20:51:09,975 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 20:51:09,976 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 20:51:09,977 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 20:51:09,978 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 20:51:09,979 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 20:51:09,980 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 20:51:09,981 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 20:51:09,982 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 20:51:09,992 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-09-02 20:51:09,992 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-02 20:51:09,992 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-02 20:51:09,997 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-02 20:51:09,997 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-02 20:51:09,997 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 02:51:09 GMT
+2024-09-02 20:51:09,997 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-02 20:51:09,997 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-02 20:51:10,007 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-02 20:51:10,103 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8721
+2024-09-02 20:51:10,110 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-02 20:51:13,163 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:51:13,171 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:51:20,612 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-02 20:51:20,614 - TeleBot - ERROR - Break infinity polling
+2024-09-02 20:51:24,213 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:51:24,412 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:51:24,428 - app - INFO - Bot iniciado
+2024-09-02 20:51:24,428 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 20:51:24,436 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 20:51:24,436 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 20:51:24,436 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 20:51:24,436 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 20:51:24,436 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 20:51:24,436 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 20:51:24,444 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 20:51:24,444 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 20:51:24,454 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-09-02 20:51:24,454 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-02 20:51:24,454 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-02 20:51:24,454 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-02 20:51:24,454 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-02 20:51:24,454 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 02:51:24 GMT
+2024-09-02 20:51:24,454 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-02 20:51:24,460 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-02 20:51:24,460 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-02 20:51:24,572 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8716
+2024-09-02 20:51:24,580 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-02 20:51:27,345 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:51:27,357 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:52:05,159 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-02 20:52:05,160 - TeleBot - ERROR - Break infinity polling
+2024-09-02 20:52:08,600 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:52:08,800 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:52:08,815 - app - INFO - Bot iniciado
+2024-09-02 20:52:08,815 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 20:52:08,820 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 20:52:08,820 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 20:52:08,820 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 20:52:08,820 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 20:52:08,826 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 20:52:08,828 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 20:52:08,828 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 20:52:08,836 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 20:52:08,853 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-09-02 20:52:08,854 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-02 20:52:08,854 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-02 20:52:08,855 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-02 20:52:08,856 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-02 20:52:08,856 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 02:52:08 GMT
+2024-09-02 20:52:08,857 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-02 20:52:08,858 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-02 20:52:08,866 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-02 20:52:08,964 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8684
+2024-09-02 20:52:08,973 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-02 20:52:11,581 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:52:11,593 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:52:24,986 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-02 20:52:24,988 - TeleBot - ERROR - Break infinity polling
+2024-09-02 20:52:30,508 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:52:30,701 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:52:30,726 - app - INFO - Bot iniciado
+2024-09-02 20:52:30,729 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 20:52:30,730 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 20:52:30,730 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 20:52:30,732 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 20:52:30,732 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 20:52:30,732 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 20:52:30,735 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 20:52:30,735 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 20:52:30,735 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 20:52:30,747 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-09-02 20:52:30,747 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-02 20:52:30,747 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-02 20:52:30,747 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-02 20:52:30,747 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-02 20:52:30,747 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 02:52:30 GMT
+2024-09-02 20:52:30,753 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-02 20:52:30,753 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-02 20:52:30,761 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-02 20:52:30,904 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8698
+2024-09-02 20:52:30,907 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-02 20:52:33,513 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:52:33,525 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:52:59,104 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-02 20:52:59,106 - TeleBot - ERROR - Break infinity polling
+2024-09-02 20:53:03,377 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:53:03,588 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:53:03,608 - app - INFO - Bot iniciado
+2024-09-02 20:53:03,608 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 20:53:03,609 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 20:53:03,611 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 20:53:03,611 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 20:53:03,611 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 20:53:03,611 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 20:53:03,611 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 20:53:03,619 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 20:53:03,619 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 20:53:03,629 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-09-02 20:53:03,629 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-02 20:53:03,629 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-02 20:53:03,632 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-02 20:53:03,632 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-02 20:53:03,632 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 02:53:03 GMT
+2024-09-02 20:53:03,632 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-02 20:53:03,632 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-02 20:53:03,641 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-02 20:53:03,770 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8733
+2024-09-02 20:53:03,772 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-02 20:53:06,292 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:53:06,303 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:53:13,644 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-02 20:53:13,645 - TeleBot - ERROR - Break infinity polling
+2024-09-02 20:53:17,566 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:53:17,763 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:53:17,780 - app - INFO - Bot iniciado
+2024-09-02 20:53:17,780 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 20:53:17,788 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 20:53:17,788 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 20:53:17,796 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 20:53:17,796 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 20:53:17,796 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 20:53:17,796 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 20:53:17,802 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 20:53:17,802 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 20:53:17,836 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-09-02 20:53:17,836 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-02 20:53:17,843 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-02 20:53:17,843 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-02 20:53:17,844 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-02 20:53:17,844 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 02:53:17 GMT
+2024-09-02 20:53:17,844 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-02 20:53:17,844 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-02 20:53:17,853 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-02 20:53:17,990 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8707
+2024-09-02 20:53:17,995 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-02 20:53:24,740 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:53:24,945 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:53:24,968 - app - INFO - Bot iniciado
+2024-09-02 20:53:24,968 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 20:53:24,968 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 20:53:24,968 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 20:53:24,968 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 20:53:24,968 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 20:53:24,968 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 20:53:24,976 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 20:53:24,976 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 20:53:24,976 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 20:53:24,989 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-09-02 20:53:24,989 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-02 20:53:24,989 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-02 20:53:24,989 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-02 20:53:24,992 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-02 20:53:24,992 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 02:53:24 GMT
+2024-09-02 20:53:24,992 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-02 20:53:24,992 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-02 20:53:25,000 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-02 20:53:25,100 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8696
+2024-09-02 20:53:25,101 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-02 20:53:30,774 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:53:30,973 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:53:30,985 - app - INFO - Bot iniciado
+2024-09-02 20:53:30,985 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 20:53:30,990 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 20:53:30,990 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 20:53:30,990 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 20:53:30,990 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 20:53:30,990 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 20:53:30,995 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 20:53:30,995 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 20:53:30,998 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 20:53:31,010 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-09-02 20:53:31,010 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-02 20:53:31,010 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-02 20:53:31,013 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-02 20:53:31,013 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-02 20:53:31,014 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 02:53:31 GMT
+2024-09-02 20:53:31,015 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-02 20:53:31,015 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-02 20:53:31,024 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-02 20:53:31,159 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8699
+2024-09-02 20:53:31,159 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-02 20:53:33,637 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:53:33,650 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:53:53,043 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-02 20:53:53,044 - TeleBot - ERROR - Break infinity polling
+2024-09-02 20:53:58,321 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:53:58,526 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:53:58,549 - app - INFO - Bot iniciado
+2024-09-02 20:53:58,549 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 20:53:58,551 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 20:53:58,551 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 20:53:58,551 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 20:53:58,551 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 20:53:58,555 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 20:53:58,555 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 20:53:58,558 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 20:53:58,558 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 20:53:58,572 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-09-02 20:53:58,572 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-02 20:53:58,572 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-02 20:53:58,575 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-02 20:53:58,575 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-02 20:53:58,575 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 02:53:58 GMT
+2024-09-02 20:53:58,575 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-02 20:53:58,575 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-02 20:53:58,583 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-02 20:53:58,685 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8723
+2024-09-02 20:53:58,692 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-02 20:54:01,437 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:54:01,453 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:55:04,815 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-02 20:55:04,816 - TeleBot - ERROR - Break infinity polling
+2024-09-02 20:55:18,314 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:55:18,520 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:55:18,533 - app - INFO - Bot iniciado
+2024-09-02 20:55:18,533 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 20:55:18,538 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 20:55:18,538 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 20:55:18,540 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 20:55:18,541 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 20:55:18,541 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 20:55:18,541 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 20:55:18,544 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 20:55:18,544 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 20:55:18,555 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-09-02 20:55:18,556 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-02 20:55:18,556 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-02 20:55:18,558 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-02 20:55:18,558 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-02 20:55:18,558 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 02:55:18 GMT
+2024-09-02 20:55:18,561 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-02 20:55:18,561 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-02 20:55:18,565 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-02 20:55:18,682 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8676
+2024-09-02 20:55:18,687 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-02 20:55:21,283 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:55:21,296 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:55:28,731 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-02 20:55:28,732 - TeleBot - ERROR - Break infinity polling
+2024-09-02 20:55:32,387 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:55:32,583 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:55:32,597 - app - INFO - Bot iniciado
+2024-09-02 20:55:32,597 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 20:55:32,597 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 20:55:32,597 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 20:55:32,597 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 20:55:32,604 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 20:55:32,604 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 20:55:32,604 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 20:55:32,621 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 20:55:32,621 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 20:55:32,637 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-09-02 20:55:32,637 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-02 20:55:32,637 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-02 20:55:32,637 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-02 20:55:32,637 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-02 20:55:32,637 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 02:55:32 GMT
+2024-09-02 20:55:32,637 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-02 20:55:32,637 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-02 20:55:32,657 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-02 20:55:32,824 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8746
+2024-09-02 20:55:32,827 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-02 20:55:35,266 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:55:35,281 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:56:23,460 - telegram_bot - INFO - Menú de opciones enviado a cessdel
+2024-09-02 20:58:33,791 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-02 20:58:33,792 - TeleBot - ERROR - Break infinity polling
+2024-09-02 20:59:04,141 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:59:04,736 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:59:04,755 - app - INFO - Bot iniciado
+2024-09-02 20:59:04,755 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 20:59:04,757 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 20:59:04,757 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 20:59:04,757 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 20:59:04,757 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 20:59:04,757 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 20:59:04,757 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 20:59:04,757 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 20:59:04,757 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 20:59:04,774 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-09-02 20:59:04,774 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-02 20:59:04,776 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-02 20:59:04,776 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-02 20:59:04,776 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-02 20:59:04,778 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 02:59:04 GMT
+2024-09-02 20:59:04,778 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-02 20:59:04,778 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-02 20:59:04,784 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-02 20:59:04,899 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8719
+2024-09-02 20:59:04,901 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-02 20:59:09,981 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 20:59:09,995 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:03:33,103 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-02 21:03:33,103 - TeleBot - ERROR - Break infinity polling
+2024-09-02 21:04:00,047 - root - INFO - Model not found, initialized a new LinearRegression model.
+2024-09-02 21:04:00,051 - __main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:04:00,174 - __main__ - INFO - Servidor iniciado
+2024-09-02 21:04:05,552 - root - INFO - Model not found, initialized a new LinearRegression model.
+2024-09-02 21:04:05,553 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:04:05,806 - root - INFO - Model not found, initialized a new LinearRegression model.
+2024-09-02 21:04:05,808 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:04:05,828 - app - INFO - Server iniciado
+2024-09-02 21:04:05,828 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 21:04:05,828 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 21:04:05,828 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 21:04:05,828 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 21:04:05,828 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 21:04:05,828 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 21:04:05,835 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 21:04:05,836 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 21:04:05,837 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 21:04:05,850 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-09-02 21:04:05,852 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-02 21:04:05,853 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-02 21:04:05,853 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-02 21:04:05,853 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-02 21:04:05,856 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 03:04:05 GMT
+2024-09-02 21:04:05,856 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-02 21:04:05,856 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-02 21:04:05,863 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-02 21:04:06,017 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8695
+2024-09-02 21:04:06,017 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-02 21:04:06,017 - root - INFO - Model not found. Training the model.
+2024-09-02 21:04:06,017 - root - INFO - Training started.
+2024-09-02 21:04:06,024 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 21:04:06,024 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 21:04:06,070 - urllib3.connectionpool - DEBUG - http://localhost:8086 "POST /api/v2/query?org=SmartHome HTTP/1.1" 404 None
+2024-09-02 21:04:06,070 - root - ERROR - Error during training: (404)
+Reason: Not Found
+HTTP response headers: HTTPHeaderDict({'Content-Type': 'application/json; charset=utf-8', 'Vary': 'Accept-Encoding', 'X-Influxdb-Build': 'OSS', 'X-Influxdb-Version': 'v2.7.6', 'X-Platform-Error-Code': 'not found', 'Date': 'Tue, 03 Sep 2024 03:04:06 GMT', 'Transfer-Encoding': 'chunked'})
+HTTP response body: b'{"code":"not found","message":"failed to initialize execute state: could not find bucket \\"{DB_BUCKET}\\""}'
+
+2024-09-02 21:04:06,074 - root - INFO - Initial model training completed.
+2024-09-02 21:04:06,075 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-09-02 21:04:06,076 - root - INFO - Scheduled job to train model every day at 00:00 AM.
+2024-09-02 21:04:06,076 - apscheduler.scheduler - INFO - Added job "TemperatureModel.train_model" to job store "default"
+2024-09-02 21:04:06,076 - apscheduler.scheduler - INFO - Scheduler started
+2024-09-02 21:04:11,011 - root - INFO - Model not found, initialized a new LinearRegression model.
+2024-09-02 21:04:11,017 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:04:11,027 - root - INFO - Model not found, initialized a new LinearRegression model.
+2024-09-02 21:04:11,033 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:04:11,035 - app - INFO - Bot corriendo
+2024-09-02 21:08:02,192 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-09-02 21:08:02,192 - app - INFO - Server detenido
+2024-09-02 21:08:04,874 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-02 21:08:04,874 - TeleBot - ERROR - Break infinity polling
+2024-09-02 21:08:11,376 - root - INFO - Model not found, initialized a new LinearRegression model.
+2024-09-02 21:08:11,376 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:08:11,572 - root - INFO - Model not found, initialized a new LinearRegression model.
+2024-09-02 21:08:11,575 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:08:11,593 - app - INFO - Server iniciado
+2024-09-02 21:08:11,593 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 21:08:11,596 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 21:08:11,597 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 21:08:11,597 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 21:08:11,598 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 21:08:11,599 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 21:08:11,599 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 21:08:11,600 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 21:08:11,601 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 21:08:11,613 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-09-02 21:08:11,613 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-02 21:08:11,613 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-02 21:08:11,613 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-02 21:08:11,613 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-02 21:08:11,613 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 03:08:11 GMT
+2024-09-02 21:08:11,613 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-02 21:08:11,613 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-02 21:08:11,620 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-02 21:08:11,793 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8679
+2024-09-02 21:08:11,795 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-02 21:08:11,795 - root - INFO - Model not found. Training the model.
+2024-09-02 21:08:11,797 - root - INFO - Training started.
+2024-09-02 21:08:11,798 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 21:08:11,798 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 21:08:11,812 - urllib3.connectionpool - DEBUG - http://localhost:8086 "POST /api/v2/query?org=SmartHome HTTP/1.1" 404 None
+2024-09-02 21:08:11,815 - root - ERROR - Error during training: (404)
+Reason: Not Found
+HTTP response headers: HTTPHeaderDict({'Content-Type': 'application/json; charset=utf-8', 'Vary': 'Accept-Encoding', 'X-Influxdb-Build': 'OSS', 'X-Influxdb-Version': 'v2.7.6', 'X-Platform-Error-Code': 'not found', 'Date': 'Tue, 03 Sep 2024 03:08:11 GMT', 'Transfer-Encoding': 'chunked'})
+HTTP response body: b'{"code":"not found","message":"failed to initialize execute state: could not find bucket \\"{DB_BUCKET}\\""}'
+
+2024-09-02 21:08:11,820 - root - INFO - Initial model training completed.
+2024-09-02 21:08:11,820 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-09-02 21:08:11,820 - root - INFO - Scheduled job to train model every day at 00:00 AM.
+2024-09-02 21:08:11,820 - apscheduler.scheduler - INFO - Added job "TemperatureModel.train_model" to job store "default"
+2024-09-02 21:08:11,823 - apscheduler.scheduler - INFO - Scheduler started
+2024-09-02 21:08:16,523 - root - INFO - Model not found, initialized a new LinearRegression model.
+2024-09-02 21:08:16,526 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:08:16,539 - root - INFO - Model not found, initialized a new LinearRegression model.
+2024-09-02 21:08:16,542 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:08:16,548 - app - INFO - Bot corriendo
+2024-09-02 21:09:43,539 - telegram_bot - INFO - Menú de opciones enviado a cessdel
+2024-09-02 21:11:20,879 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-09-02 21:11:20,882 - app - INFO - Server detenido
+2024-09-02 21:11:23,363 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-02 21:11:23,363 - TeleBot - ERROR - Break infinity polling
+2024-09-02 21:11:30,083 - root - INFO - Model not found, initialized a new LinearRegression model.
+2024-09-02 21:11:30,087 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:11:30,278 - root - INFO - Model not found, initialized a new LinearRegression model.
+2024-09-02 21:11:30,285 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:11:30,300 - app - INFO - Server iniciado
+2024-09-02 21:11:30,300 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 21:11:30,302 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 21:11:30,302 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 21:11:30,302 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 21:11:30,305 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 21:11:30,305 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 21:11:30,307 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 21:11:30,307 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 21:11:30,307 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 21:11:30,319 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-09-02 21:11:30,319 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-02 21:11:30,319 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-02 21:11:30,322 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-02 21:11:30,322 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-02 21:11:30,323 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 03:11:30 GMT
+2024-09-02 21:11:30,324 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-02 21:11:30,324 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-02 21:11:30,328 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-02 21:11:30,449 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8710
+2024-09-02 21:11:30,451 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-02 21:11:30,451 - root - INFO - Model not found. Training the model.
+2024-09-02 21:11:30,454 - root - INFO - Training started.
+2024-09-02 21:11:30,456 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 21:11:30,457 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 21:11:30,468 - urllib3.connectionpool - DEBUG - http://localhost:8086 "POST /api/v2/query?org=SmartHome HTTP/1.1" 404 None
+2024-09-02 21:11:30,471 - root - ERROR - Error during training: (404)
+Reason: Not Found
+HTTP response headers: HTTPHeaderDict({'Content-Type': 'application/json; charset=utf-8', 'Vary': 'Accept-Encoding', 'X-Influxdb-Build': 'OSS', 'X-Influxdb-Version': 'v2.7.6', 'X-Platform-Error-Code': 'not found', 'Date': 'Tue, 03 Sep 2024 03:11:30 GMT', 'Transfer-Encoding': 'chunked'})
+HTTP response body: b'{"code":"not found","message":"failed to initialize execute state: could not find bucket \\"{DB_BUCKET}\\""}'
+
+2024-09-02 21:11:30,473 - root - INFO - Initial model training completed.
+2024-09-02 21:11:30,473 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-09-02 21:11:30,473 - root - INFO - Scheduled job to train model every day at 00:00 AM.
+2024-09-02 21:11:30,475 - apscheduler.scheduler - INFO - Added job "TemperatureModel.train_model" to job store "default"
+2024-09-02 21:11:30,475 - apscheduler.scheduler - INFO - Scheduler started
+2024-09-02 21:11:35,323 - root - INFO - Model not found, initialized a new LinearRegression model.
+2024-09-02 21:11:35,326 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:11:35,343 - root - INFO - Model not found, initialized a new LinearRegression model.
+2024-09-02 21:11:35,343 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:11:35,349 - app - INFO - Bot corriendo
+2024-09-02 21:11:44,069 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-09-02 21:11:44,069 - app - INFO - Server detenido
+2024-09-02 21:11:45,783 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-02 21:11:45,785 - TeleBot - ERROR - Break infinity polling
+2024-09-02 21:11:52,340 - root - INFO - Model not found, initialized a new LinearRegression model.
+2024-09-02 21:11:52,340 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:11:52,554 - root - INFO - Model not found, initialized a new LinearRegression model.
+2024-09-02 21:11:52,558 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:11:52,574 - app - INFO - Server iniciado
+2024-09-02 21:11:52,574 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 21:11:52,576 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 21:11:52,576 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 21:11:52,576 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 21:11:52,578 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 21:11:52,578 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 21:11:52,578 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 21:11:52,578 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 21:11:52,582 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 21:11:52,603 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-09-02 21:11:52,603 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-02 21:11:52,603 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-02 21:11:52,603 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-02 21:11:52,606 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-02 21:11:52,606 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 03:11:52 GMT
+2024-09-02 21:11:52,606 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-02 21:11:52,608 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-02 21:11:52,613 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-02 21:11:52,756 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8698
+2024-09-02 21:11:52,762 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-02 21:11:52,762 - root - INFO - Model not found. Training the model.
+2024-09-02 21:11:52,763 - root - INFO - Training started.
+2024-09-02 21:11:52,764 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 21:11:52,765 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 21:11:52,796 - urllib3.connectionpool - DEBUG - http://localhost:8086 "POST /api/v2/query?org=SmartHome HTTP/1.1" 200 None
+2024-09-02 21:11:52,822 - root - INFO - Model saved to model.pkl
+2024-09-02 21:11:52,826 - root - INFO - Training completed.
+Mean Squared Error (MSE): 21.83332523107815
+Mean Absolute Error (MAE): 3.1666797212030056
+R²: 0.022388422489038162
+2024-09-02 21:11:52,827 - root - INFO - Initial model training completed.
+2024-09-02 21:11:52,829 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-09-02 21:11:52,829 - root - INFO - Scheduled job to train model every day at 00:00 AM.
+2024-09-02 21:11:52,830 - apscheduler.scheduler - INFO - Added job "TemperatureModel.train_model" to job store "default"
+2024-09-02 21:11:52,830 - apscheduler.scheduler - INFO - Scheduler started
+2024-09-02 21:11:57,630 - root - INFO - Model loaded successfully.
+2024-09-02 21:11:57,633 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:11:57,652 - root - INFO - Model loaded successfully.
+2024-09-02 21:11:57,654 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:11:57,654 - app - INFO - Bot corriendo
+2024-09-02 21:14:03,344 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-09-02 21:14:03,344 - app - INFO - Server detenido
+2024-09-02 21:14:04,421 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-02 21:14:04,422 - TeleBot - ERROR - Break infinity polling
+2024-09-02 21:14:12,301 - root - INFO - Model loaded successfully.
+2024-09-02 21:14:12,304 - __main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:14:12,426 - __main__ - INFO - Servidor iniciado
+2024-09-02 21:14:18,070 - root - INFO - Model loaded successfully.
+2024-09-02 21:14:18,073 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:14:18,277 - root - INFO - Model loaded successfully.
+2024-09-02 21:14:18,277 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:14:18,299 - app - INFO - Server iniciado
+2024-09-02 21:14:18,299 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 21:14:18,303 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 21:14:18,304 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 21:14:18,304 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 21:14:18,304 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 21:14:18,304 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 21:14:18,307 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 21:14:18,307 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 21:14:18,307 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 21:14:18,322 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-09-02 21:14:18,324 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-02 21:14:18,324 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-02 21:14:18,324 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-02 21:14:18,326 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-02 21:14:18,326 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 03:14:18 GMT
+2024-09-02 21:14:18,326 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-02 21:14:18,326 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-02 21:14:18,329 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-02 21:14:18,428 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8679
+2024-09-02 21:14:18,436 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-02 21:14:18,436 - root - INFO - Model found. Skipping initial training.
+2024-09-02 21:14:18,439 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-09-02 21:14:18,439 - root - INFO - Scheduled job to train model every day at 00:00 AM.
+2024-09-02 21:14:18,439 - apscheduler.scheduler - INFO - Added job "TemperatureModel.train_model" to job store "default"
+2024-09-02 21:14:18,439 - apscheduler.scheduler - INFO - Scheduler started
+2024-09-02 21:14:23,578 - root - INFO - Model loaded successfully.
+2024-09-02 21:14:23,586 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:14:23,594 - root - INFO - Model loaded successfully.
+2024-09-02 21:14:23,603 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:14:23,603 - app - INFO - Bot corriendo
+2024-09-02 21:18:13,277 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-09-02 21:18:13,277 - app - INFO - Server detenido
+2024-09-02 21:18:14,772 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-02 21:18:14,774 - TeleBot - ERROR - Break infinity polling
+2024-09-02 21:18:37,426 - root - INFO - Model loaded successfully.
+2024-09-02 21:18:37,428 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:18:37,645 - root - INFO - Model loaded successfully.
+2024-09-02 21:18:37,648 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:18:37,675 - app - INFO - Server iniciado
+2024-09-02 21:18:37,675 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 21:18:37,679 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 21:18:37,679 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 21:18:37,679 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 21:18:37,679 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 21:18:37,683 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 21:18:37,683 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 21:18:37,686 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 21:18:37,686 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 21:18:37,710 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-09-02 21:18:37,710 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-02 21:18:37,710 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-02 21:18:37,710 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-02 21:18:37,710 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-02 21:18:37,710 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 03:18:37 GMT
+2024-09-02 21:18:37,710 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-02 21:18:37,710 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-02 21:18:37,721 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-02 21:18:37,879 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8713
+2024-09-02 21:18:37,886 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-02 21:18:37,886 - root - INFO - Model found. Skipping initial training.
+2024-09-02 21:18:37,886 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-09-02 21:18:37,886 - root - INFO - Scheduled job to train model every day at 00:00 AM.
+2024-09-02 21:18:37,886 - apscheduler.scheduler - INFO - Added job "TemperatureModel.train_model" to job store "default"
+2024-09-02 21:18:37,886 - apscheduler.scheduler - INFO - Scheduler started
+2024-09-02 21:18:43,045 - root - INFO - Model loaded successfully.
+2024-09-02 21:18:43,049 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:18:43,063 - root - INFO - Model loaded successfully.
+2024-09-02 21:18:43,066 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:18:43,069 - app - INFO - Bot corriendo
+2024-09-02 21:18:50,584 - app - INFO - Future temperatures predicted.
+2024-09-02 21:19:04,963 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-09-02 21:19:04,965 - app - INFO - Server detenido
+2024-09-02 21:19:05,589 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-02 21:19:05,589 - TeleBot - ERROR - Break infinity polling
+2024-09-02 21:19:24,049 - root - INFO - Model loaded successfully.
+2024-09-02 21:19:24,049 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:19:24,248 - root - INFO - Model loaded successfully.
+2024-09-02 21:19:24,248 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:19:24,276 - app - INFO - Server iniciado
+2024-09-02 21:19:24,276 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 21:19:24,279 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 21:19:24,279 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 21:19:24,279 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 21:19:24,279 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 21:19:24,279 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 21:19:24,279 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 21:19:24,279 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 21:19:24,279 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 21:19:24,306 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-09-02 21:19:24,306 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-02 21:19:24,306 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-02 21:19:24,306 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-02 21:19:24,306 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-02 21:19:24,306 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 03:19:24 GMT
+2024-09-02 21:19:24,306 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-02 21:19:24,313 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-02 21:19:24,322 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-02 21:19:24,429 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8668
+2024-09-02 21:19:24,434 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-02 21:19:24,434 - root - INFO - Model found. Skipping initial training.
+2024-09-02 21:19:24,436 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-09-02 21:19:24,436 - root - INFO - Scheduled job to train model every day at 00:00 AM.
+2024-09-02 21:19:24,437 - apscheduler.scheduler - INFO - Added job "TemperatureModel.train_model" to job store "default"
+2024-09-02 21:19:24,438 - apscheduler.scheduler - INFO - Scheduler started
+2024-09-02 21:19:29,589 - root - INFO - Model loaded successfully.
+2024-09-02 21:19:29,589 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:19:29,607 - root - INFO - Model loaded successfully.
+2024-09-02 21:19:29,609 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:19:29,614 - app - INFO - Bot corriendo
+2024-09-02 21:20:13,675 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-09-02 21:20:13,676 - app - INFO - Server detenido
+2024-09-02 21:20:15,589 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-02 21:20:15,590 - TeleBot - ERROR - Break infinity polling
+2024-09-02 21:20:22,431 - root - INFO - Model loaded successfully.
+2024-09-02 21:20:22,435 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:20:22,633 - root - INFO - Model loaded successfully.
+2024-09-02 21:20:22,633 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:20:22,666 - app - INFO - Server iniciado
+2024-09-02 21:20:22,666 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 21:20:22,666 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 21:20:22,675 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 21:20:22,677 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 21:20:22,677 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 21:20:22,677 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 21:20:22,677 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 21:20:22,677 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 21:20:22,683 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 21:20:22,698 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-09-02 21:20:22,699 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-02 21:20:22,699 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-02 21:20:22,700 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-02 21:20:22,700 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-02 21:20:22,700 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 03:20:22 GMT
+2024-09-02 21:20:22,702 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-02 21:20:22,702 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-02 21:20:22,709 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-02 21:20:22,811 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8664
+2024-09-02 21:20:22,813 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-02 21:20:22,815 - root - INFO - Model found. Skipping initial training.
+2024-09-02 21:20:22,815 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-09-02 21:20:22,817 - root - INFO - Scheduled job to train model every day at 00:00 AM.
+2024-09-02 21:20:22,817 - apscheduler.scheduler - INFO - Added job "TemperatureModel.train_model" to job store "default"
+2024-09-02 21:20:22,818 - apscheduler.scheduler - INFO - Scheduler started
+2024-09-02 21:20:27,930 - root - INFO - Model loaded successfully.
+2024-09-02 21:20:27,938 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:20:27,949 - root - INFO - Model loaded successfully.
+2024-09-02 21:20:27,954 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:20:27,955 - app - INFO - Bot corriendo
+2024-09-02 21:20:43,228 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-09-02 21:20:43,231 - app - INFO - Server detenido
+2024-09-02 21:20:44,414 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-02 21:20:44,414 - TeleBot - ERROR - Break infinity polling
+2024-09-02 21:21:04,897 - root - INFO - Model loaded successfully.
+2024-09-02 21:21:04,900 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:21:05,100 - root - INFO - Model loaded successfully.
+2024-09-02 21:21:05,103 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:21:05,118 - app - INFO - Server iniciado
+2024-09-02 21:21:05,118 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 21:21:05,121 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 21:21:05,121 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 21:21:05,121 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 21:21:05,121 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 21:21:05,125 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 21:21:05,125 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 21:21:05,125 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 21:21:05,125 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 21:21:05,137 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-09-02 21:21:05,137 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-02 21:21:05,140 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-02 21:21:05,141 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-02 21:21:05,141 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-02 21:21:05,141 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 03:21:05 GMT
+2024-09-02 21:21:05,143 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-02 21:21:05,143 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-02 21:21:05,149 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-02 21:21:05,299 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8686
+2024-09-02 21:21:05,303 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-02 21:21:05,305 - root - INFO - Model found. Skipping initial training.
+2024-09-02 21:21:05,305 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-09-02 21:21:05,305 - root - INFO - Scheduled job to train model every day at 00:00 AM.
+2024-09-02 21:21:05,305 - apscheduler.scheduler - INFO - Added job "TemperatureModel.train_model" to job store "default"
+2024-09-02 21:21:05,305 - apscheduler.scheduler - INFO - Scheduler started
+2024-09-02 21:21:10,327 - root - INFO - Model loaded successfully.
+2024-09-02 21:21:10,331 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:21:10,344 - root - INFO - Model loaded successfully.
+2024-09-02 21:21:10,349 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:21:10,351 - app - INFO - Bot corriendo
+2024-09-02 21:21:27,924 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-09-02 21:21:27,925 - app - INFO - Server detenido
+2024-09-02 21:21:29,813 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-02 21:21:29,814 - TeleBot - ERROR - Break infinity polling
+2024-09-02 21:21:35,681 - root - INFO - Model loaded successfully.
+2024-09-02 21:21:35,684 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:21:35,879 - root - INFO - Model loaded successfully.
+2024-09-02 21:21:35,881 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:21:35,901 - app - INFO - Server iniciado
+2024-09-02 21:21:35,901 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-02 21:21:35,904 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-02 21:21:35,904 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-02 21:21:35,905 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-02 21:21:35,906 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-02 21:21:35,907 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-02 21:21:35,907 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-02 21:21:35,909 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-02 21:21:35,909 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-02 21:21:35,923 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /health HTTP/1.1" 200 0
+2024-09-02 21:21:35,923 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-02 21:21:35,923 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-02 21:21:35,923 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-02 21:21:35,923 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-02 21:21:35,923 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 03:21:35 GMT
+2024-09-02 21:21:35,923 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-02 21:21:35,927 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-02 21:21:35,934 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-02 21:21:36,030 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8696
+2024-09-02 21:21:36,032 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-02 21:21:36,032 - root - INFO - Model found. Skipping initial training.
+2024-09-02 21:21:36,032 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-09-02 21:21:36,032 - root - INFO - Scheduled job to train model every day at 00:00 AM.
+2024-09-02 21:21:36,032 - apscheduler.scheduler - INFO - Added job "TemperatureModel.train_model" to job store "default"
+2024-09-02 21:21:36,032 - apscheduler.scheduler - INFO - Scheduler started
+2024-09-02 21:21:41,198 - root - INFO - Model loaded successfully.
+2024-09-02 21:21:41,203 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:21:41,221 - root - INFO - Model loaded successfully.
+2024-09-02 21:21:41,221 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-02 21:21:41,221 - app - INFO - Bot corriendo
+2024-09-02 21:25:14,513 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-09-02 21:25:14,513 - app - INFO - Server detenido
+2024-09-02 21:25:14,871 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-02 21:25:14,871 - TeleBot - ERROR - Break infinity polling
+2024-09-03 12:00:22,838 - root - INFO - Model loaded successfully.
+2024-09-03 12:00:22,839 - __main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:00:22,934 - __main__ - INFO - Servidor iniciado
+2024-09-03 12:00:24,962 - root - INFO - Model loaded successfully.
+2024-09-03 12:00:24,964 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:00:25,133 - root - INFO - Model loaded successfully.
+2024-09-03 12:00:25,134 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:00:25,141 - app - INFO - Server iniciado
+2024-09-03 12:00:25,141 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-03 12:00:25,142 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-03 12:00:25,142 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-03 12:00:25,143 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-03 12:00:25,143 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-03 12:00:25,143 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-03 12:00:25,143 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-03 12:00:25,144 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-03 12:00:25,144 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-03 12:00:27,198 - root - INFO - Model loaded successfully.
+2024-09-03 12:00:27,199 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:00:27,206 - root - INFO - Model loaded successfully.
+2024-09-03 12:00:27,207 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:00:27,209 - app - INFO - Bot corriendo
+2024-09-03 12:00:29,248 - root - INFO - Error al conectar a la base de datos
+2024-09-03 12:00:31,250 - root - INFO - Error al conectar a la base de datos. Reintentando...
+2024-09-03 12:00:31,250 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-03 12:00:31,251 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-03 12:00:31,252 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-03 12:00:31,252 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-03 12:00:31,252 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-03 12:00:31,252 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-03 12:00:31,254 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-03 12:00:31,254 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-03 12:00:35,343 - root - INFO - Error al conectar a la base de datos
+2024-09-03 12:00:37,345 - root - INFO - Error al conectar a la base de datos. Reintentando...
+2024-09-03 12:00:37,596 - app - ERROR - Error en la conexión a la base de datos o a internet
+2024-09-03 12:00:37,597 - root - INFO - Model found. Skipping initial training.
+2024-09-03 12:00:37,597 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-09-03 12:00:37,597 - root - INFO - Scheduled job to train model every day at 00:00 AM.
+2024-09-03 12:00:37,598 - apscheduler.scheduler - INFO - Added job "TemperatureModel.train_model" to job store "default"
+2024-09-03 12:00:37,598 - apscheduler.scheduler - INFO - Scheduler started
+2024-09-03 12:00:42,609 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<subscribe_topics() done, defined at C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py:52> exception=MqttError('timed out')>
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py", line 53, in subscribe_topics
+    async with aiomqtt.Client(hostname=mqtt_broker, port=int(mqtt_port)) as client:
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\aiomqtt\client.py", line 712, in __aenter__
+    raise MqttError(str(exc)) from None
+aiomqtt.exceptions.MqttError: timed out
+2024-09-03 12:00:54,153 - app - INFO - Ping
+2024-09-03 12:01:18,100 - app - INFO - Configuracion recibida
+2024-09-03 12:01:18,104 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-03 12:01:18,105 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-03 12:01:18,105 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-03 12:01:18,105 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-03 12:01:18,106 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-03 12:01:18,106 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-03 12:01:18,107 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-03 12:01:18,107 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-03 12:01:22,220 - root - INFO - Error al conectar a la base de datos
+2024-09-03 12:01:24,221 - root - INFO - Error al conectar a la base de datos. Reintentando...
+2024-09-03 12:01:24,223 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-03 12:01:24,223 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-03 12:01:24,224 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-03 12:01:24,224 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-03 12:01:24,224 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-03 12:01:24,225 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-03 12:01:24,226 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-03 12:01:24,226 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-03 12:01:28,310 - root - INFO - Error al conectar a la base de datos
+2024-09-03 12:01:30,312 - root - INFO - Error al conectar a la base de datos. Reintentando...
+2024-09-03 12:01:30,353 - app - ERROR - Error en la conexión a la base de datos o a internet
+2024-09-03 12:01:35,373 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<subscribe_topics() done, defined at C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py:52> exception=MqttError('timed out')>
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py", line 53, in subscribe_topics
+    async with aiomqtt.Client(hostname=mqtt_broker, port=int(mqtt_port)) as client:
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\aiomqtt\client.py", line 712, in __aenter__
+    raise MqttError(str(exc)) from None
+aiomqtt.exceptions.MqttError: timed out
+2024-09-03 12:02:14,163 - app - INFO - Configuracion recibida
+2024-09-03 12:02:14,167 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-03 12:02:14,167 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-03 12:02:14,168 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-03 12:02:14,168 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-03 12:02:14,168 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-03 12:02:14,168 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-03 12:02:14,169 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-03 12:02:14,169 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-03 12:02:18,261 - root - INFO - Error al conectar a la base de datos
+2024-09-03 12:02:20,262 - root - INFO - Error al conectar a la base de datos. Reintentando...
+2024-09-03 12:02:20,263 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://localhost:8086/health?'
+2024-09-03 12:02:20,264 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-03 12:02:20,264 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-03 12:02:20,265 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-03 12:02:20,265 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-03 12:02:20,265 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-03 12:02:20,266 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-03 12:02:20,267 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2024-09-03 12:02:24,383 - root - INFO - Error al conectar a la base de datos
+2024-09-03 12:02:26,384 - root - INFO - Error al conectar a la base de datos. Reintentando...
+2024-09-03 12:02:26,403 - app - ERROR - Error en la conexión a la base de datos o a internet
+2024-09-03 12:02:31,418 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<subscribe_topics() done, defined at C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py:52> exception=MqttError('timed out')>
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py", line 53, in subscribe_topics
+    async with aiomqtt.Client(hostname=mqtt_broker, port=int(mqtt_port)) as client:
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\aiomqtt\client.py", line 712, in __aenter__
+    raise MqttError(str(exc)) from None
+aiomqtt.exceptions.MqttError: timed out
+2024-09-03 12:02:45,562 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-09-03 12:02:45,562 - app - INFO - Server detenido
+2024-09-03 12:02:47,558 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-03 12:02:47,559 - TeleBot - ERROR - Break infinity polling
+2024-09-03 12:02:51,933 - root - INFO - Model loaded successfully.
+2024-09-03 12:02:51,935 - __main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:02:51,981 - __main__ - INFO - Servidor iniciado
+2024-09-03 12:02:54,092 - root - INFO - Model loaded successfully.
+2024-09-03 12:02:54,093 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:02:54,176 - root - INFO - Model loaded successfully.
+2024-09-03 12:02:54,178 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:02:54,185 - app - INFO - Server iniciado
+2024-09-03 12:02:54,185 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-03 12:02:54,186 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://192.168.100.79:8086/health?'
+2024-09-03 12:02:54,186 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-03 12:02:54,186 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-03 12:02:54,186 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-03 12:02:54,188 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-03 12:02:54,188 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-03 12:02:54,189 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-03 12:02:54,189 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 192.168.100.79:8086
+2024-09-03 12:02:54,284 - urllib3.connectionpool - DEBUG - http://192.168.100.79:8086 "GET /health HTTP/1.1" 200 0
+2024-09-03 12:02:54,284 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-03 12:02:54,284 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-03 12:02:54,284 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-03 12:02:54,285 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.8
+2024-09-03 12:02:54,285 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 18:02:53 GMT
+2024-09-03 12:02:54,285 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-03 12:02:54,285 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.8", "commit": "18c989726c"}
+
+2024-09-03 12:02:54,287 - root - INFO - Conexión exitosa a la base de datos
+2024-09-03 12:02:54,290 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-03 12:02:54,462 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8712
+2024-09-03 12:02:54,564 - root - INFO - Conexión a Internet exitosa
+2024-09-03 12:02:54,564 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-03 12:02:54,564 - root - INFO - Model found. Skipping initial training.
+2024-09-03 12:02:54,565 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-09-03 12:02:54,565 - root - INFO - Scheduled job to train model every day at 00:00 AM.
+2024-09-03 12:02:54,566 - apscheduler.scheduler - INFO - Added job "TemperatureModel.train_model" to job store "default"
+2024-09-03 12:02:54,566 - apscheduler.scheduler - INFO - Scheduler started
+2024-09-03 12:02:54,576 - root - INFO - Suscrito al tópico: sonido
+2024-09-03 12:02:54,576 - root - INFO - Suscrito al tópico: temperatura
+2024-09-03 12:02:54,577 - root - INFO - Suscrito al tópico: boton
+2024-09-03 12:02:54,577 - root - INFO - Suscrito al tópico: distancia
+2024-09-03 12:02:54,578 - root - INFO - Suscrito al tópico: ldr
+2024-09-03 12:02:56,378 - root - INFO - Model loaded successfully.
+2024-09-03 12:02:56,379 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:02:56,385 - root - INFO - Model loaded successfully.
+2024-09-03 12:02:56,387 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:02:56,388 - app - INFO - Bot corriendo
+2024-09-03 12:02:58,099 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-03 12:02:58,100 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1214, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 676, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 648, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 330, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2024-09-03 12:03:01,954 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-03 12:03:01,956 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1214, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 676, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 648, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 330, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2024-09-03 12:03:06,360 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-03 12:03:06,361 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1214, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 676, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 648, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 330, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2024-09-03 12:03:11,717 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-03 12:03:11,718 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1214, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 676, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 648, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 330, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2024-09-03 12:03:19,083 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-03 12:03:19,085 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1214, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 676, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 648, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 330, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2024-09-03 12:03:27,542 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-03 12:03:27,544 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1214, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 676, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 648, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 330, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2024-09-03 12:03:32,081 - app - INFO - Training status
+2024-09-03 12:03:35,907 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-09-03 12:03:35,907 - app - INFO - Server detenido
+2024-09-03 12:03:38,563 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-03 12:03:38,563 - TeleBot - ERROR - Break infinity polling
+2024-09-03 12:03:54,676 - root - ERROR - Model not found, initialized a new LinearRegression model.
+2024-09-03 12:03:54,677 - __main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:03:54,755 - __main__ - INFO - Servidor iniciado
+2024-09-03 12:03:56,854 - root - ERROR - Model not found, initialized a new LinearRegression model.
+2024-09-03 12:03:56,856 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:03:56,985 - root - ERROR - Model not found, initialized a new LinearRegression model.
+2024-09-03 12:03:56,986 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:03:56,993 - app - INFO - Server iniciado
+2024-09-03 12:03:56,994 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-03 12:03:56,994 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://192.168.100.79:8086/health?'
+2024-09-03 12:03:56,994 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-03 12:03:56,996 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-03 12:03:56,996 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-03 12:03:56,996 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-03 12:03:56,997 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-03 12:03:56,997 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-03 12:03:56,997 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 192.168.100.79:8086
+2024-09-03 12:03:57,010 - urllib3.connectionpool - DEBUG - http://192.168.100.79:8086 "GET /health HTTP/1.1" 200 0
+2024-09-03 12:03:57,010 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-03 12:03:57,010 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-03 12:03:57,011 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-03 12:03:57,011 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.8
+2024-09-03 12:03:57,011 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 18:03:56 GMT
+2024-09-03 12:03:57,011 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-03 12:03:57,012 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.8", "commit": "18c989726c"}
+
+2024-09-03 12:03:57,012 - root - INFO - Conexión exitosa a la base de datos
+2024-09-03 12:03:57,014 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-03 12:03:57,189 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8689
+2024-09-03 12:03:57,190 - root - INFO - Conexión a Internet exitosa
+2024-09-03 12:03:57,190 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-03 12:03:57,190 - root - INFO - Model not found. Training the model.
+2024-09-03 12:03:57,191 - root - INFO - Training started.
+2024-09-03 12:03:57,191 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-03 12:03:57,191 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 192.168.100.79:8086
+2024-09-03 12:03:57,311 - urllib3.connectionpool - DEBUG - http://192.168.100.79:8086 "POST /api/v2/query?org=SmartHome HTTP/1.1" 200 None
+2024-09-03 12:03:59,110 - root - ERROR - Model not found, initialized a new LinearRegression model.
+2024-09-03 12:03:59,111 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:03:59,117 - root - ERROR - Model not found, initialized a new LinearRegression model.
+2024-09-03 12:03:59,118 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:03:59,119 - app - INFO - Bot corriendo
+2024-09-03 12:04:06,444 - root - INFO - Model saved to model.pkl
+2024-09-03 12:04:06,471 - root - INFO - Training completed.
+Mean Squared Error (MSE): 0.6106706903910584
+Mean Absolute Error (MAE): 0.6106814119987307
+R²: 0.16461841649446385
+2024-09-03 12:04:06,572 - root - INFO - Initial model training completed.
+2024-09-03 12:04:06,572 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-09-03 12:04:06,572 - root - INFO - Scheduled job to train model every day at 00:00 AM.
+2024-09-03 12:04:06,573 - apscheduler.scheduler - INFO - Added job "TemperatureModel.train_model" to job store "default"
+2024-09-03 12:04:06,573 - apscheduler.scheduler - INFO - Scheduler started
+2024-09-03 12:04:06,593 - root - INFO - Suscrito al tópico: sonido
+2024-09-03 12:04:06,594 - root - INFO - Suscrito al tópico: temperatura
+2024-09-03 12:04:06,594 - root - INFO - Suscrito al tópico: boton
+2024-09-03 12:04:06,595 - root - INFO - Suscrito al tópico: distancia
+2024-09-03 12:04:06,595 - root - INFO - Suscrito al tópico: ldr
+2024-09-03 12:04:06,766 - app - INFO - Training status
+2024-09-03 12:04:16,784 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-03 12:04:16,785 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1214, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 676, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 648, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 330, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2024-09-03 12:04:38,603 - root - INFO - Future temperatures solicited.
+2024-09-03 12:04:38,603 - app - INFO - Future temperatures predicted.
+2024-09-03 12:04:52,951 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-03 12:04:52,952 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1214, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 676, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 648, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 330, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2024-09-03 12:05:56,381 - root - INFO - Future temperatures solicited.
+2024-09-03 12:05:56,381 - app - INFO - Future temperatures predicted.
+2024-09-03 12:05:56,598 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-03 12:05:56,600 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1214, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 676, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 648, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 330, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2024-09-03 12:06:03,808 - root - INFO - Future temperatures solicited.
+2024-09-03 12:06:03,808 - app - INFO - Future temperatures predicted.
+2024-09-03 12:06:39,294 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-09-03 12:06:39,294 - app - INFO - Server detenido
+2024-09-03 12:06:40,174 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-03 12:06:40,174 - TeleBot - ERROR - Break infinity polling
+2024-09-03 12:06:42,685 - root - INFO - Model loaded successfully.
+2024-09-03 12:06:42,686 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:06:42,770 - root - INFO - Model loaded successfully.
+2024-09-03 12:06:42,771 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:06:42,779 - app - INFO - Server iniciado
+2024-09-03 12:06:42,779 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-03 12:06:42,780 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://192.168.100.79:8086/health?'
+2024-09-03 12:06:42,780 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-03 12:06:42,780 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-03 12:06:42,781 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-03 12:06:42,781 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-03 12:06:42,781 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-03 12:06:42,782 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-03 12:06:42,782 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 192.168.100.79:8086
+2024-09-03 12:06:42,803 - urllib3.connectionpool - DEBUG - http://192.168.100.79:8086 "GET /health HTTP/1.1" 200 0
+2024-09-03 12:06:42,804 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-03 12:06:42,804 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-03 12:06:42,804 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-03 12:06:42,804 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.8
+2024-09-03 12:06:42,804 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 18:06:42 GMT
+2024-09-03 12:06:42,804 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-03 12:06:42,805 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.8", "commit": "18c989726c"}
+
+2024-09-03 12:06:42,806 - root - INFO - Conexión exitosa a la base de datos
+2024-09-03 12:06:42,807 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-03 12:06:42,959 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8700
+2024-09-03 12:06:42,961 - root - INFO - Conexión a Internet exitosa
+2024-09-03 12:06:42,961 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-03 12:06:42,961 - root - INFO - Model found. Skipping initial training.
+2024-09-03 12:06:42,961 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-09-03 12:06:42,961 - root - INFO - Scheduled job to train model every day at 00:00 AM.
+2024-09-03 12:06:42,962 - apscheduler.scheduler - INFO - Added job "TemperatureModel.train_model" to job store "default"
+2024-09-03 12:06:42,962 - apscheduler.scheduler - INFO - Scheduler started
+2024-09-03 12:06:42,965 - root - INFO - Suscrito al tópico: sonido
+2024-09-03 12:06:42,965 - root - INFO - Suscrito al tópico: temperatura
+2024-09-03 12:06:42,965 - root - INFO - Suscrito al tópico: boton
+2024-09-03 12:06:42,967 - root - INFO - Suscrito al tópico: distancia
+2024-09-03 12:06:42,967 - root - INFO - Suscrito al tópico: ldr
+2024-09-03 12:06:44,888 - root - INFO - Model loaded successfully.
+2024-09-03 12:06:44,889 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:06:44,895 - root - INFO - Model loaded successfully.
+2024-09-03 12:06:44,897 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:06:44,898 - app - INFO - Bot corriendo
+2024-09-03 12:07:00,230 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-03 12:07:00,232 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1214, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 676, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 648, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 330, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2024-09-03 12:07:11,446 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-09-03 12:07:11,446 - app - INFO - Server detenido
+2024-09-03 12:07:12,522 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-03 12:07:12,522 - TeleBot - ERROR - Break infinity polling
+2024-09-03 12:07:15,026 - root - ERROR - Model not found, initialized a new LinearRegression model.
+2024-09-03 12:07:15,027 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:07:15,109 - root - ERROR - Model not found, initialized a new LinearRegression model.
+2024-09-03 12:07:15,110 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:07:15,117 - app - INFO - Server iniciado
+2024-09-03 12:07:15,118 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-03 12:07:15,118 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://192.168.100.79:8086/health?'
+2024-09-03 12:07:15,118 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-03 12:07:15,119 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-03 12:07:15,119 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-03 12:07:15,119 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-03 12:07:15,119 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-03 12:07:15,120 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-03 12:07:15,120 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 192.168.100.79:8086
+2024-09-03 12:07:15,132 - urllib3.connectionpool - DEBUG - http://192.168.100.79:8086 "GET /health HTTP/1.1" 200 0
+2024-09-03 12:07:15,132 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-03 12:07:15,132 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-03 12:07:15,133 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-03 12:07:15,133 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.8
+2024-09-03 12:07:15,133 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 18:07:14 GMT
+2024-09-03 12:07:15,134 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-03 12:07:15,134 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.8", "commit": "18c989726c"}
+
+2024-09-03 12:07:15,135 - root - INFO - Conexión exitosa a la base de datos
+2024-09-03 12:07:15,137 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-03 12:07:15,342 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8713
+2024-09-03 12:07:15,344 - root - INFO - Conexión a Internet exitosa
+2024-09-03 12:07:15,344 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-03 12:07:15,344 - root - INFO - Model not found. Training the model.
+2024-09-03 12:07:15,344 - root - INFO - Training started.
+2024-09-03 12:07:15,345 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-03 12:07:15,345 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 192.168.100.79:8086
+2024-09-03 12:07:15,529 - urllib3.connectionpool - DEBUG - http://192.168.100.79:8086 "POST /api/v2/query?org=SmartHome HTTP/1.1" 200 None
+2024-09-03 12:07:17,224 - root - ERROR - Model not found, initialized a new LinearRegression model.
+2024-09-03 12:07:17,225 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:07:17,232 - root - ERROR - Model not found, initialized a new LinearRegression model.
+2024-09-03 12:07:17,233 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:07:17,235 - app - INFO - Bot corriendo
+2024-09-03 12:07:24,476 - root - INFO - Model saved to model.pkl
+2024-09-03 12:07:24,516 - root - INFO - Training completed.
+Mean Squared Error (MSE): 0.6543187569125207
+Mean Absolute Error (MAE): 0.6304235769549803
+R²: 0.22540497751355704
+2024-09-03 12:07:24,627 - root - INFO - Initial model training completed.
+2024-09-03 12:07:24,628 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-09-03 12:07:24,628 - root - INFO - Scheduled job to train model every day at 00:00 AM.
+2024-09-03 12:07:24,629 - apscheduler.scheduler - INFO - Added job "TemperatureModel.train_model" to job store "default"
+2024-09-03 12:07:24,629 - apscheduler.scheduler - INFO - Scheduler started
+2024-09-03 12:07:24,632 - root - INFO - Suscrito al tópico: sonido
+2024-09-03 12:07:24,632 - root - INFO - Suscrito al tópico: temperatura
+2024-09-03 12:07:24,632 - root - INFO - Suscrito al tópico: boton
+2024-09-03 12:07:24,633 - root - INFO - Suscrito al tópico: distancia
+2024-09-03 12:07:24,633 - root - INFO - Suscrito al tópico: ldr
+2024-09-03 12:07:25,935 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-09-03 12:07:25,935 - app - INFO - Server detenido
+2024-09-03 12:07:27,009 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-03 12:07:27,009 - TeleBot - ERROR - Break infinity polling
+2024-09-03 12:07:29,563 - root - INFO - Model loaded successfully.
+2024-09-03 12:07:29,564 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:07:29,646 - root - INFO - Model loaded successfully.
+2024-09-03 12:07:29,648 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:07:29,655 - app - INFO - Server iniciado
+2024-09-03 12:07:29,655 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-03 12:07:29,656 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://192.168.100.79:8086/health?'
+2024-09-03 12:07:29,656 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-03 12:07:29,656 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-03 12:07:29,656 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-03 12:07:29,656 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-03 12:07:29,658 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-03 12:07:29,658 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-03 12:07:29,658 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 192.168.100.79:8086
+2024-09-03 12:07:29,771 - urllib3.connectionpool - DEBUG - http://192.168.100.79:8086 "GET /health HTTP/1.1" 200 0
+2024-09-03 12:07:29,773 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-03 12:07:29,773 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-03 12:07:29,773 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-03 12:07:29,773 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.8
+2024-09-03 12:07:29,774 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 18:07:29 GMT
+2024-09-03 12:07:29,774 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-03 12:07:29,774 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.8", "commit": "18c989726c"}
+
+2024-09-03 12:07:29,775 - root - INFO - Conexión exitosa a la base de datos
+2024-09-03 12:07:29,777 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-03 12:07:30,150 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8718
+2024-09-03 12:07:30,163 - root - INFO - Conexión a Internet exitosa
+2024-09-03 12:07:30,164 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-03 12:07:30,164 - root - INFO - Model found. Skipping initial training.
+2024-09-03 12:07:30,164 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-09-03 12:07:30,165 - root - INFO - Scheduled job to train model every day at 00:00 AM.
+2024-09-03 12:07:30,165 - apscheduler.scheduler - INFO - Added job "TemperatureModel.train_model" to job store "default"
+2024-09-03 12:07:30,165 - apscheduler.scheduler - INFO - Scheduler started
+2024-09-03 12:07:30,168 - root - INFO - Suscrito al tópico: sonido
+2024-09-03 12:07:30,168 - root - INFO - Suscrito al tópico: temperatura
+2024-09-03 12:07:30,169 - root - INFO - Suscrito al tópico: boton
+2024-09-03 12:07:30,169 - root - INFO - Suscrito al tópico: distancia
+2024-09-03 12:07:30,170 - root - INFO - Suscrito al tópico: ldr
+2024-09-03 12:07:31,750 - root - INFO - Model loaded successfully.
+2024-09-03 12:07:31,751 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:07:31,757 - root - INFO - Model loaded successfully.
+2024-09-03 12:07:31,758 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:07:31,760 - app - INFO - Bot corriendo
+2024-09-03 12:07:41,176 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-09-03 12:07:41,177 - app - INFO - Server detenido
+2024-09-03 12:07:41,510 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-03 12:07:41,510 - TeleBot - ERROR - Break infinity polling
+2024-09-03 12:07:57,588 - root - ERROR - Model not found, initialized a new LinearRegression model.
+2024-09-03 12:07:57,590 - __main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:07:57,640 - __main__ - INFO - Servidor iniciado
+2024-09-03 12:07:59,946 - root - ERROR - Model not found, initialized a new LinearRegression model.
+2024-09-03 12:07:59,947 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:08:00,030 - root - ERROR - Model not found, initialized a new LinearRegression model.
+2024-09-03 12:08:00,031 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:08:00,038 - app - INFO - Server iniciado
+2024-09-03 12:08:00,038 - app - INFO - Configuracion encontrada en, reiniando la suscripcion
+2024-09-03 12:08:00,040 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://192.168.100.79:8086/health?'
+2024-09-03 12:08:00,040 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-03 12:08:00,040 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-03 12:08:00,040 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-03 12:08:00,041 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-03 12:08:00,041 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-03 12:08:00,041 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-03 12:08:00,041 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 192.168.100.79:8086
+2024-09-03 12:08:00,055 - urllib3.connectionpool - DEBUG - http://192.168.100.79:8086 "GET /health HTTP/1.1" 200 0
+2024-09-03 12:08:00,056 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-03 12:08:00,056 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-03 12:08:00,056 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-03 12:08:00,057 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.8
+2024-09-03 12:08:00,057 - influxdb_client.client.http - DEBUG - <<< Date: Tue, 03 Sep 2024 18:07:59 GMT
+2024-09-03 12:08:00,057 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-03 12:08:00,057 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.8", "commit": "18c989726c"}
+
+2024-09-03 12:08:00,058 - root - INFO - Conexión exitosa a la base de datos
+2024-09-03 12:08:00,060 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-03 12:08:00,412 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8716
+2024-09-03 12:08:00,415 - root - INFO - Conexión a Internet exitosa
+2024-09-03 12:08:00,415 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-03 12:08:00,416 - root - INFO - Model not found. Training the model.
+2024-09-03 12:08:00,416 - root - INFO - Training started.
+2024-09-03 12:08:00,417 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-03 12:08:00,417 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 192.168.100.79:8086
+2024-09-03 12:08:00,597 - urllib3.connectionpool - DEBUG - http://192.168.100.79:8086 "POST /api/v2/query?org=SmartHome HTTP/1.1" 200 None
+2024-09-03 12:08:02,157 - root - ERROR - Model not found, initialized a new LinearRegression model.
+2024-09-03 12:08:02,158 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:08:02,165 - root - ERROR - Model not found, initialized a new LinearRegression model.
+2024-09-03 12:08:02,167 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-03 12:08:02,168 - app - INFO - Bot corriendo
+2024-09-03 12:08:03,934 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-03 12:08:03,934 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1214, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 676, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 648, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 330, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2024-09-03 12:08:09,583 - root - INFO - Model saved to model.pkl
+2024-09-03 12:08:09,621 - root - INFO - Training completed.
+Mean Squared Error (MSE): 0.6543143204083348
+Mean Absolute Error (MAE): 0.630422090500681
+R²: 0.2254057160646833
+2024-09-03 12:08:09,737 - root - INFO - Initial model training completed.
+2024-09-03 12:08:09,738 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-09-03 12:08:09,738 - root - INFO - Scheduled job to train model every day at 00:00 AM.
+2024-09-03 12:08:09,738 - apscheduler.scheduler - INFO - Added job "TemperatureModel.train_model" to job store "default"
+2024-09-03 12:08:09,739 - apscheduler.scheduler - INFO - Scheduler started
+2024-09-03 12:08:09,741 - root - INFO - Suscrito al tópico: sonido
+2024-09-03 12:08:09,742 - root - INFO - Suscrito al tópico: temperatura
+2024-09-03 12:08:09,742 - root - INFO - Suscrito al tópico: boton
+2024-09-03 12:08:09,744 - root - INFO - Suscrito al tópico: distancia
+2024-09-03 12:08:09,744 - root - INFO - Suscrito al tópico: ldr
+2024-09-03 12:08:13,616 - app - INFO - Training status
+2024-09-03 12:08:45,358 - app - INFO - Training status
+2024-09-03 12:08:46,241 - app - INFO - Training status
+2024-09-03 12:09:07,561 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-03 12:09:07,563 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1214, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 676, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 648, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 330, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2024-09-03 12:10:11,178 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-03 12:10:11,181 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 1214, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 676, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\__init__.py", line 648, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 330, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2024-09-03 12:10:41,146 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-09-03 12:10:41,146 - app - INFO - Server detenido
+2024-09-03 12:10:43,648 - TeleBot - ERROR - Infinity polling: polling exited
+2024-09-03 12:10:43,648 - TeleBot - ERROR - Break infinity polling
