@@ -1,5 +1,5 @@
 import logging
-from bot_config import bot, TELEGRAM_ID
+from bot_config import bot
 import telebot
 from telebot import types
 from localStoragePy import localStoragePy
@@ -8,6 +8,11 @@ from localStoragePy import localStoragePy
 from vars.db_config import get_latest_sensor_data
 logger = logging.getLogger(__name__)
 localStorage = localStoragePy('my_app_namespace', 'json')
+telegram_id = localStorage.getItem('telegram_ID')
+API_TOKEN = localStorage.getItem('telegram_TOKEN')
+
+# Instanciar el bot
+bot = telebot.TeleBot(API_TOKEN)
 
 
 # Función para enviar mensajes a Telegram con botones
@@ -20,9 +25,11 @@ def send_alert(message: str):
         markup.add(btn_lo_atiendo, btn_info)
         
         # Enviar mensaje con botones
-        bot.send_message(chat_id=TELEGRAM_ID, text=message, reply_markup=markup)
+        bot.send_message(chat_id=telegram_id, text=message, reply_markup=markup)
+        print(f"Chat ID: {telegram_id}")
         logger.info("Mensaje con botones enviado exitosamente.")
     except Exception as e:
+        print(f"Chat ID: {telegram_id}")
         logger.error(f"Error al enviar el mensaje: {e}")
 
 # Función para manejar la respuesta de los botones

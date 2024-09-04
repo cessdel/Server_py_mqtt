@@ -12,7 +12,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from contextlib import asynccontextmanager, contextmanager
 from localStoragePy import localStoragePy
 from mqtt_suscriber import subscribe_topics
-from telegram_bot import send_alert
+from telegram_bot import send_alert, start_polling, stop_polling
 from vars.model import GetConfig
 from bot_config import bot # Importar el bot y funciones adicionales desde bot_config
 import telebot
@@ -40,7 +40,6 @@ logger.info("Inicio de la aplicación - Verificando configuración del archivo d
 
 # Configura el programador de tareas
 scheduler = BackgroundScheduler()
-
 subscription_active = False
 topicos_lista = []
 localStorage = localStoragePy('my_app_namespace', 'json')
@@ -91,6 +90,8 @@ async def lifespan(app:FastAPI):
     # Inicia el scheduler
     scheduler.start()
     yield
+    process.terminate()
+    process.join()
     scheduler.shutdown()
     logger.info("Server detenido")
     print("Server detenido")
@@ -100,9 +101,9 @@ app = FastAPI(lifespan=lifespan)
 
 def run_bot_polling():  
     try:
-        print("Bot corriendo")
-        logger.info("Bot corriendo")
-        bot.infinity_polling()  
+        print("Iniciando bot")
+        start_polling()
+        print("Bot iniciado")
         
     except Exception as e:
         logger.error(f"Error en el bot: {e}")
@@ -172,6 +173,8 @@ async def CreateConfig(request: Request):
     localStorage.setItem('telegram_TOKEN', body["telegram_TOKEN"])
     localStorage.setItem('telegram_ID', body["telegram_ID"])
     localStorage.setItem('mqtt_topics', body["mqtt_topics"])
+    
+    print("Bot reiniciado")
     print("Configuracion recibida")
     print("Probando configuracion")
     # Verificar la conexión a la base de datos y a internet
@@ -192,7 +195,7 @@ def intentarConfiguracion():
     else:
         logger.error("Error en la conexión a la base de datos o a internet")
         return False
-
+    
 
 @app.get("/config")
 async def returnConfig():
