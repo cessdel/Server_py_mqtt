@@ -1,19 +1,15 @@
 import asyncio
+import json
 import logging
 import os
 import sys
 import aiomqtt
 from pydantic import BaseModel
-from localStoragePy import localStoragePy
 from datetime import datetime, timedelta
 
 from vars.db_config import guardar_en_influxdb
 
-# Inicializar localStorage
-localStorage = localStoragePy('my_app_namespace', 'json')
-mqtt_broker = localStorage.getItem('mqtt_broker')
-mqtt_port = localStorage.getItem('mqtt_port')
-mqtt_topics = localStorage.getItem('mqtt_topics')
+
 
 # Definir el modelo Pydantic para el JSON esperado
 class TopicItem(BaseModel):
@@ -51,7 +47,16 @@ async def manejar_mensaje(message):
         last_values[key] = (mensaje, current_time)
 
 async def subscribe_topics(topicos):
+    
+    config_path = 'config.json'
+    # Cargar datos desde el archivo JSON de configuración
+    with open(config_path, 'r') as f:
+        config = json.load(f)
+    # Inicializar las variables de conexión
+    mqtt_broker = config.get('mqtt_broker')
+    mqtt_port = config.get('mqtt_port')
     async with aiomqtt.Client(hostname=mqtt_broker, port=int(mqtt_port)) as client:
+        print("Variables de conexión:", mqtt_broker, mqtt_port)
         for topic_item in topicos:
             await client.subscribe(topic_item)
             print(f"Suscrito al tópico: {topic_item}")
