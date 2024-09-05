@@ -1,22 +1,16 @@
-import asyncio
 from contextlib import asynccontextmanager
-import logging
-import multiprocessing
-import os
+import json, logging, multiprocessing, os, asyncio
 from apscheduler.triggers.cron import CronTrigger
 from fastapi import FastAPI, HTTPException, Request
 from pydantic import BaseModel
-import databseConn
 from fastapi import FastAPI
 from apscheduler.schedulers.background import BackgroundScheduler
 from contextlib import asynccontextmanager, contextmanager
-from localStoragePy import localStoragePy
-from mqtt_suscriber import subscribe_topics
-from telegram_bot import send_alert, start_polling, stop_polling
-from vars.model import GetConfig
-from bot_config import bot # Importar el bot y funciones adicionales desde bot_config
-import telebot
+from vars.model import FileStorage
 from modelos.regression import TemperatureModel
+
+# Inicializa la clase FileStorage
+localStorage = FileStorage()
 
 # Configuración del logger
 logging.basicConfig(
@@ -42,47 +36,46 @@ logger.info("Inicio de la aplicación - Verificando configuración del archivo d
 scheduler = BackgroundScheduler()
 subscription_active = False
 topicos_lista = []
-localStorage = localStoragePy('my_app_namespace', 'json')
 
 @asynccontextmanager
 async def lifespan(app:FastAPI):
-    process = multiprocessing.Process(target=run_bot_polling)
-    process.start()
+    
     logger.info("Server iniciado")
-
+    # Cargar configuración del archivo config.json
+    # Cargar configuración del archivo config.json
+    config_data = load_config()
     
-    # Verificar si hay datos guardados en localStoragePy al iniciar el servidor
-    if localStorage:
-        data = localStorage.getItem("mqtt_broker")
-        if data:
-            logger.info("Configuracion encontrada en, reiniando la suscripcion")
-            print("Configuracion encontrada en, reiniando la suscripcion")
-            global subscription_active 
-            subscription_active = True
-            print("Subscription active: ", subscription_active)
-            mqtt_topics = localStorage.getItem('mqtt_topics')
-            print(mqtt_topics)
-            DBstatus = intentarConfiguracion()
-            topicos_lista = mqtt_topics.strip('][').split(', ')
-            topicos_lista = [elemento.strip("'") for elemento in topicos_lista]
-            
-            asyncio.create_task(subscribe_topics(topicos_lista))
-                    
-        else:
-            print("No se encontraron datos en localStoragePy.")
-    else:
-        print("No se pudo acceder a localStoragePy.")
-    
-    # Verifica si el modelo ya existe
-    if not os.path.exists(model_path):
-        logging.info("Model not found. Training the model.")
-        print("Model not found. Training the model.")
-        model_handler.train_model()
-        logging.info("Initial model training completed.")
-    else:
-        logging.info("Model found. Skipping initial training.")
-        print("Model found. Skipping initial training.")
+    if not config_data:
+        logger.info("No se encontraron datos en config.json. Esperando configuración...")
+        print("No se encontraron datos en config.json. Esperando configuración...")
         
+        
+        # Volver a cargar la configuración después de recibirla
+        config_data = load_config()
+    
+    if config_data:
+        from mqtt_suscriber import subscribe_topics
+        logger.info("Configuración encontrada, reiniciando la suscripción")
+        print("Configuración encontrada, reiniciando la suscripción")
+        
+        global subscription_active
+        subscription_active = True
+        print("Subscription active: ", subscription_active)
+        run_bot_polling()
+        # Procesar tópicos MQTT desde la configuración
+        mqtt_topics = config_data.get('mqtt_topics', [])
+        print("Tópicos MQTT:", mqtt_topics)
+        process = multiprocessing.Process(target=run_bot_polling)
+        process.start()
+        # Suscribirse a los tópicos
+        topicos_lista = [str(topic).strip() for topic in mqtt_topics]
+        print("Subscribing to topics:", topicos_lista)
+        asyncio.create_task(subscribe_topics(topicos_lista))
+        
+    else:
+        print("No se encontraron datos en config.json.")
+        logger.info("No se encontraron datos en config.json.")
+        # Pausar el servidor hasta recibir la configuración
     # Agrega el trabajo al scheduler para que se ejecute a las 00:00 AM todos los días
     scheduler.add_job(model_handler.train_model, CronTrigger(hour=0, minute=0))  # Ejecuta a las 00:00 AM
     logging.info("Scheduled job to train model every day at 00:00 AM.")
@@ -100,6 +93,8 @@ app = FastAPI(lifespan=lifespan)
     
 
 def run_bot_polling():  
+    from telegram_bot import send_alert, start_polling, stop_polling
+
     try:
         print("Iniciando bot")
         start_polling()
@@ -108,7 +103,19 @@ def run_bot_polling():
     except Exception as e:
         logger.error(f"Error en el bot: {e}")
         print(f"Error en el bot: {e}")  
-        
+# Estructura JSON predeterminada
+
+
+def load_config():
+    config_path = 'config.json'
+    
+    if os.path.exists(config_path):
+        with open(config_path, 'r') as config_file:
+            config_data = json.load(config_file)
+            return config_data
+    else:
+        return {}
+
 
 
 
@@ -129,6 +136,7 @@ def ping():
 
 @app.get("/status_bot")  
 def status_bot():
+    from bot_config import bot # Importar el bot y funciones adicionales desde bot_config
     logger.info("Verificando estado del bot")
     if bot.get_updates():
         return {"status": "activo"}  # Verificar si hay actualizaciones recientes
@@ -138,6 +146,7 @@ def status_bot():
 
 @app.get("/send_message")
 def enviar():
+    from telegram_bot import send_alert
     logger.info("Enviando mensaje de prueba")
     send_alert("Hola, soy un mensaje de prueba")
 
@@ -155,39 +164,71 @@ async def predict_future_temperatures():
 async def training_status():
     logger.info("Training status")
     return {"status": model_handler.training_status}
-
+# Función para guardar configuración en config.json
+def save_config(body):
+    config_path = 'config.json'
+    try:
+        with open(config_path, 'w') as config_file:
+            json.dump(body, config_file, indent=4)
+        print("Configuración guardada en config.json")
+    except Exception as e:
+        logger.error(f"Error al guardar configuración: {str(e)}")
+        
+        
 @app.post("/config")
 async def CreateConfig(request: Request):
+    from telegram_bot import stop_polling
+    stop_polling()
+    from mqtt_suscriber import subscribe_topics
     logger.info("Configuracion recibida")
     global subscription_active
     subscription_active = True
-    body = await request.json()
-    #SET ITEM FROM BODY
-    localStorage.setItem('mqtt_broker', body["mqtt_broker"])
-    localStorage.setItem('mqtt_port', body["mqtt_port"])
-    localStorage.setItem('influx_host', body["influx_host"])
-    localStorage.setItem('influx_port', body["influx_port"])
-    localStorage.setItem('influx_token', body["influx_token"])
-    localStorage.setItem('influx_org', body["influx_org"])
-    localStorage.setItem('influx_bucket', body["influx_bucket"])
-    localStorage.setItem('telegram_TOKEN', body["telegram_TOKEN"])
-    localStorage.setItem('telegram_ID', body["telegram_ID"])
-    localStorage.setItem('mqtt_topics', body["mqtt_topics"])
+    try:
+        # Obtener el cuerpo del POST
+        body = await request.json()
+
+        # Guardar la configuración en config.json
+        save_config(body)
+
+        # Cargar datos desde el archivo JSON de configuración
+        config_path = 'config.json'
+        if os.path.exists(config_path):
+            with open(config_path, 'r') as f:
+                config = json.load(f)
+        else:
+            raise FileNotFoundError("El archivo config.json no se encontró")
+
+        # Definir las variables de conexión
+        DB_PORT = config.get('influx_port')
+        DB_HOST = config.get('influx_host')
+        DB_ORG = config.get('influx_org')
+        DB_TOKEN = config.get('influx_token')
+        print("Variables de conexión:", DB_HOST, DB_PORT, DB_ORG, DB_TOKEN)
+
+
+        print("Configuración guardada en config.json")
+        logger.info("Configuración guardada en config.json")        
+        intentarConfiguracion()
+        # Procesar tópicos MQTT desde la configuración
+        mqtt_topics = body.get('mqtt_topics', [])
+        topicos_lista = [str(topic).strip() for topic in mqtt_topics]
+        print("Subscribing to topics:", topicos_lista)
+        asyncio.create_task(subscribe_topics(topicos_lista))
+        process = multiprocessing.Process(target=run_bot_polling)
+        process.start()
+        return {"message": "Configuración recibida", "data": body}
     
-    print("Bot reiniciado")
-    print("Configuracion recibida")
-    print("Probando configuracion")
-    # Verificar la conexión a la base de datos y a internet
-    intentarConfiguracion()
-    mqtt_topics = localStorage.getItem('mqtt_topics')
-    print(mqtt_topics)
-    topicos_lista = mqtt_topics.strip('][').split(', ')
-    topicos_lista = [elemento.strip("'") for elemento in topicos_lista]
-    #SUBSCRIBE TO TOPICS
-    #await subscribe_topics(topicos_lista)
-    asyncio.create_task(subscribe_topics(topicos_lista))
-    return {"message": "Configuracion recibida", "data": body}
+    except KeyError as e:
+        logger.error(f"Falta un campo en la configuración: {str(e)}")
+        return {"message": "Error en la configuración", "error": str(e)}
+
+    except Exception as e:
+        logger.error(f"Error inesperado: {str(e)}")
+        return {"message": "Error inesperado", "error": str(e)}
+    
+
 def intentarConfiguracion():
+    import databseConn
     
     if databseConn.verificar_conexion() and databseConn.verificar_conexion_internet():
         logger.info("Conexión a la base de datos y a internet exitosa")
@@ -196,11 +237,12 @@ def intentarConfiguracion():
         logger.error("Error en la conexión a la base de datos o a internet")
         return False
     
+    
 
 @app.get("/config")
 async def returnConfig():
     logger.info("Enviando configuracion")
-    c = await GetConfig()
+    c = load_config()
     return c
 
 if __name__ == "__main__":

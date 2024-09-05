@@ -1,15 +1,26 @@
-from localStoragePy import localStoragePy
+# storage.py
+import json
+import os
 
+class FileStorage:
+    def __init__(self, filename="config.json"):
+        self.filename = filename
+        if not os.path.exists(self.filename):
+            self.save({})
 
-localStorage = localStoragePy('my_app_namespace', 'json')
+    def save(self, data):
+        with open(self.filename, 'w') as f:
+            json.dump(data, f)
 
+    def load(self):
+        with open(self.filename, 'r') as f:
+            return json.load(f)
 
-async def GetConfig():
-    mqtt_broker = localStorage.getItem('mqtt_broker')
-    mqtt_port = localStorage.getItem('mqtt_port')
-    mysql_host = localStorage.getItem('mysql_host')
-    mysql_user = localStorage.getItem('mysql_user')
-    mysql_password = localStorage.getItem('mysql_password')
-    mysql_db = localStorage.getItem('mysql_db')
-    mqtt_topics = localStorage.getItem('mqtt_topics')
-    return {"message": "Se obtuvo la configuracion", "data": {"mqtt_broker": mqtt_broker, "mqtt_port": mqtt_port, "mysql_host": mysql_host, "mysql_user": mysql_user, "mysql_password": mysql_password, "mysql_db": mysql_db, "mqtt_topics": mqtt_topics}}
+    def setItem(self, key, value):
+        data = self.load()
+        data[key] = value
+        self.save(data)
+
+    def getItem(self, key):
+        data = self.load()
+        return data.get(key, None)

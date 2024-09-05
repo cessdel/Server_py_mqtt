@@ -3,7 +3,7 @@ import logging
 import time
 
 import requests
-from vars.db_config import check_influxdb_connection
+
 
 MAX_INTENTOS = 3  # Número máximo de intentos de conexión
 
@@ -24,6 +24,7 @@ def verificar_conexion_internet():
     print("No se pudo establecer conexión a Internet después de", MAX_INTENTOS, "intentos")
     return False
 def verificar_conexion():
+    from vars.db_config import check_influxdb_connection
     intentos = 0
     while intentos < MAX_INTENTOS:
         try:
