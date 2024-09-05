@@ -11,6 +11,7 @@ from modelos.regression import TemperatureModel
 
 # Inicializa la clase FileStorage
 localStorage = FileStorage()
+process = None
 
 # Configuración del logger
 logging.basicConfig(
@@ -56,24 +57,21 @@ async def lifespan(app:FastAPI):
     if config_data:
         from mqtt_suscriber import subscribe_topics
         logger.info("Configuración encontrada, reiniciando la suscripción")
-        print("Configuración encontrada, reiniciando la suscripción")
         
         global subscription_active
         subscription_active = True
-        print("Subscription active: ", subscription_active)
-        run_bot_polling()
         # Procesar tópicos MQTT desde la configuración
         mqtt_topics = config_data.get('mqtt_topics', [])
-        print("Tópicos MQTT:", mqtt_topics)
+        logger.info("Tópicos MQTT:", mqtt_topics)
+        global process
         process = multiprocessing.Process(target=run_bot_polling)
         process.start()
         # Suscribirse a los tópicos
         topicos_lista = [str(topic).strip() for topic in mqtt_topics]
-        print("Subscribing to topics:", topicos_lista)
+        logger.info("Subscribing to topics:", topicos_lista)
         asyncio.create_task(subscribe_topics(topicos_lista))
         
     else:
-        print("No se encontraron datos en config.json.")
         logger.info("No se encontraron datos en config.json.")
         # Pausar el servidor hasta recibir la configuración
     # Agrega el trabajo al scheduler para que se ejecute a las 00:00 AM todos los días
@@ -177,8 +175,13 @@ def save_config(body):
         
 @app.post("/config")
 async def CreateConfig(request: Request):
-    from telegram_bot import stop_polling
-    stop_polling()
+    global process
+    if process is not None:
+        process.terminate()
+        process.join()
+    
+    process = None
+    logger.info("proceso detenido")
     from mqtt_suscriber import subscribe_topics
     logger.info("Configuracion recibida")
     global subscription_active
@@ -215,6 +218,7 @@ async def CreateConfig(request: Request):
         print("Subscribing to topics:", topicos_lista)
         asyncio.create_task(subscribe_topics(topicos_lista))
         process = multiprocessing.Process(target=run_bot_polling)
+        logger.info("Iniciando proceso")
         process.start()
         return {"message": "Configuración recibida", "data": body}
     
