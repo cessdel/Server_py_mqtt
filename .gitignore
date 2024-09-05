@@ -1,0 +1,4 @@
+.dockerignore
+Dockerfile
+model.pkl
+server.log

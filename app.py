@@ -62,18 +62,25 @@ async def lifespan(app:FastAPI):
         subscription_active = True
         # Procesar tópicos MQTT desde la configuración
         mqtt_topics = config_data.get('mqtt_topics', [])
-        logger.info("Tópicos MQTT:", mqtt_topics)
         global process
         process = multiprocessing.Process(target=run_bot_polling)
         process.start()
         # Suscribirse a los tópicos
         topicos_lista = [str(topic).strip() for topic in mqtt_topics]
-        logger.info("Subscribing to topics:", topicos_lista)
         asyncio.create_task(subscribe_topics(topicos_lista))
         
     else:
         logger.info("No se encontraron datos en config.json.")
         # Pausar el servidor hasta recibir la configuración
+    # Verifica si el modelo ya existe
+    if not os.path.exists(model_path):
+        logging.info("Model not found. Training the model.")
+        print("Model not found. Training the model.")
+        model_handler.train_model()
+        logging.info("Initial model training completed.")
+    else:
+        logging.info("Model found. Skipping initial training.")
+        print("Model found. Skipping initial training.")
     # Agrega el trabajo al scheduler para que se ejecute a las 00:00 AM todos los días
     scheduler.add_job(model_handler.train_model, CronTrigger(hour=0, minute=0))  # Ejecuta a las 00:00 AM
     logging.info("Scheduled job to train model every day at 00:00 AM.")

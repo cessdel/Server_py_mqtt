@@ -2,12 +2,10 @@ pyodbc
 fastapi
 uvicorn[standard]
 pydantic
-azure-identity
 paho-mqtt
 mysql-connector-python
 asyncio-mqtt
 aiomqtt
-localstoragePy
 pyTelegramBotAPI
 influxdb-client
 scikit-learn

@@ -1,0 +1,18 @@
+{
+    "mqtt_broker": "192.168.208.1",
+    "mqtt_port": "1883",
+    "influx_host": "localhost",
+    "influx_port": "8086",
+    "influx_token": "N5uBUI0zlHTie9VFrmb3W5d71ROauFrRiAbfWlf2u-viyEIvgTq12rmeApgxEH31s37PTOhS6g7Zpg0VBEKICw==",
+    "influx_org": "SmartHome",
+    "influx_bucket": "SmartHomeData",
+    "telegram_TOKEN": "7440855740:AAF8gf7U9VrmuURN6ixOR0c_Ba9byLaVgpw",
+    "telegram_ID": "-4502744335",
+    "mqtt_topics": [
+        "sonido",
+        "temperatura",
+        "boton",
+        "distancia",
+        "ldr"
+    ]
+}

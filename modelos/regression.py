@@ -1,3 +1,4 @@
+import json
 from influxdb_client import InfluxDBClient
 import pandas as pd
 from sklearn.linear_model import LinearRegression
@@ -7,18 +8,24 @@ from datetime import datetime, timedelta
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 import joblib
 import logging
-localStorage = localStoragePy('my_app_namespace', 'json')
 
 
-DB_PORT = localStorage.getItem('influx_port')
-DB_HOST = localStorage.getItem('influx_host')
-DB_ORG = localStorage.getItem('influx_org')
-DB_TOKEN = localStorage.getItem('influx_token')
-DB_BUCKET = localStorage.getItem('influx_bucket')
-url=f'http://{str(DB_HOST)}:{str(DB_PORT)}'
+
 
 class TemperatureModel:
+    
+    
     def __init__(self, model_path):
+        config_path = 'config.json'
+        # Cargar datos desde el archivo JSON de configuración
+        with open(config_path, 'r') as f:
+            config = json.load(f)
+        DB_PORT = config.get('influx_port')
+        DB_HOST = config.get('influx_host')
+        DB_ORG = config.get('influx_org')
+        DB_TOKEN = config.get('influx_token')
+        DB_BUCKET = config.get('influx_bucket')
+        url=f'http://{str(DB_HOST)}:{str(DB_PORT)}'
         self.model_path = model_path
         self.model = self.load_model()
         self.client = InfluxDBClient(
@@ -45,6 +52,14 @@ class TemperatureModel:
         print(f"Model saved to {self.model_path}")
 
     def train_model(self):
+        config_path = 'config.json'
+        # Cargar datos desde el archivo JSON de configuración
+        with open(config_path, 'r') as f:
+            config = json.load(f)
+        DB_PORT = config.get('influx_port')
+        DB_HOST = config.get('influx_host')
+        DB_BUCKET = config.get('influx_bucket')
+        url=f'http://{str(DB_HOST)}:{str(DB_PORT)}'
         logging.info("Training started.")
         print("Training started.")
         self.training_status = "In progress"
