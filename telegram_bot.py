@@ -2,7 +2,6 @@ import json
 import logging
 import telebot
 from telebot import types
-from localStoragePy import localStoragePy
 
 
 from vars.db_config import get_latest_sensor_data

@@ -12,6 +12,7 @@ from modelos.regression import TemperatureModel
 # Inicializa la clase FileStorage
 localStorage = FileStorage()
 process = None
+training = None
 
 # Configuración del logger
 logging.basicConfig(
@@ -47,6 +48,7 @@ async def lifespan(app:FastAPI):
     config_data = load_config()
     
     if not config_data:
+        
         logger.info("No se encontraron datos en config.json. Esperando configuración...")
         print("No se encontraron datos en config.json. Esperando configuración...")
         
@@ -73,11 +75,10 @@ async def lifespan(app:FastAPI):
         logger.info("No se encontraron datos en config.json.")
         # Pausar el servidor hasta recibir la configuración
     # Verifica si el modelo ya existe
+    
     if not os.path.exists(model_path):
-        logging.info("Model not found. Training the model.")
-        print("Model not found. Training the model.")
-        model_handler.train_model()
-        logging.info("Initial model training completed.")
+        logging.info("Model not found. Creating a new model.")
+        
     else:
         logging.info("Model found. Skipping initial training.")
         print("Model found. Skipping initial training.")
@@ -98,7 +99,7 @@ app = FastAPI(lifespan=lifespan)
     
 
 def run_bot_polling():  
-    from telegram_bot import send_alert, start_polling, stop_polling
+    from telegram_bot import start_polling
 
     try:
         print("Iniciando bot")
@@ -139,15 +140,6 @@ def ping():
     print("Ping")
     return {"message": "Servidor en línea"}
 
-@app.get("/status_bot")  
-def status_bot():
-    from bot_config import bot # Importar el bot y funciones adicionales desde bot_config
-    logger.info("Verificando estado del bot")
-    if bot.get_updates():
-        return {"status": "activo"}  # Verificar si hay actualizaciones recientes
-    else:
-        return {"status": "inactivo"}
-                
 
 @app.get("/send_message")
 def enviar():

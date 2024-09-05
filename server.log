@@ -18215,3 +18215,150 @@ R²: 7.129230840519085e-05
 2024-09-05 00:27:18,986 - app - INFO - Future temperatures predicted.
 2024-09-05 00:27:28,706 - apscheduler.scheduler - INFO - Scheduler has been shut down
 2024-09-05 00:27:28,706 - app - INFO - Server detenido
+2024-09-05 00:48:26,833 - root - INFO - Model loaded successfully.
+2024-09-05 00:48:26,841 - __main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-05 00:48:27,021 - __main__ - INFO - Servidor iniciado
+2024-09-05 00:48:47,070 - root - ERROR - Model not found, initialized a new LinearRegression model.
+2024-09-05 00:48:47,079 - __main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-05 00:48:47,255 - __main__ - INFO - Servidor iniciado
+2024-09-05 00:48:52,240 - root - ERROR - Model not found, initialized a new LinearRegression model.
+2024-09-05 00:48:52,249 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-05 00:48:52,539 - root - ERROR - Model not found, initialized a new LinearRegression model.
+2024-09-05 00:48:52,543 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-05 00:48:52,548 - app - INFO - Server iniciado
+2024-09-05 00:48:52,549 - app - INFO - No se encontraron datos en config.json. Esperando configuración...
+2024-09-05 00:48:52,550 - app - INFO - No se encontraron datos en config.json.
+2024-09-05 00:48:52,550 - root - INFO - Model not found. Creating a new model.
+2024-09-05 00:48:52,551 - root - INFO - Initial model training completed.
+2024-09-05 00:48:52,551 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-09-05 00:48:52,552 - root - INFO - Scheduled job to train model every day at 00:00 AM.
+2024-09-05 00:48:52,554 - apscheduler.scheduler - INFO - Added job "TemperatureModel.train_model" to job store "default"
+2024-09-05 00:48:52,555 - apscheduler.scheduler - INFO - Scheduler started
+2024-09-05 00:49:34,210 - root - ERROR - Model not found, initialized a new LinearRegression model.
+2024-09-05 00:49:34,217 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-05 00:49:34,489 - root - ERROR - Model not found, initialized a new LinearRegression model.
+2024-09-05 00:49:34,492 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-05 00:49:34,499 - app - INFO - Server iniciado
+2024-09-05 00:49:34,500 - app - INFO - No se encontraron datos en config.json. Esperando configuración...
+2024-09-05 00:49:34,502 - app - INFO - No se encontraron datos en config.json.
+2024-09-05 00:49:34,503 - root - INFO - Model not found. Creating a new model.
+2024-09-05 00:49:34,504 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-09-05 00:49:34,505 - root - INFO - Scheduled job to train model every day at 00:00 AM.
+2024-09-05 00:49:34,510 - apscheduler.scheduler - INFO - Added job "TemperatureModel.train_model" to job store "default"
+2024-09-05 00:49:34,512 - apscheduler.scheduler - INFO - Scheduler started
+2024-09-05 00:50:01,642 - root - ERROR - Model not found, initialized a new LinearRegression model.
+2024-09-05 00:50:01,648 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-05 00:50:01,908 - root - ERROR - Model not found, initialized a new LinearRegression model.
+2024-09-05 00:50:01,910 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-05 00:50:01,913 - app - INFO - Server iniciado
+2024-09-05 00:50:01,915 - app - INFO - No se encontraron datos en config.json. Esperando configuración...
+2024-09-05 00:50:01,915 - app - INFO - No se encontraron datos en config.json.
+2024-09-05 00:50:01,915 - root - INFO - Model not found. Creating a new model.
+2024-09-05 00:50:01,915 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-09-05 00:50:01,915 - root - INFO - Scheduled job to train model every day at 00:00 AM.
+2024-09-05 00:50:01,924 - apscheduler.scheduler - INFO - Added job "TemperatureModel.train_model" to job store "default"
+2024-09-05 00:50:01,924 - apscheduler.scheduler - INFO - Scheduler started
+2024-09-05 00:50:17,880 - app - INFO - proceso detenido
+2024-09-05 00:50:17,937 - app - INFO - Configuracion recibida
+2024-09-05 00:50:17,959 - app - INFO - Configuración guardada en config.json
+2024-09-05 00:50:18,041 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://192.168.208.1:8086/health?'
+2024-09-05 00:50:18,042 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-09-05 00:50:18,042 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-09-05 00:50:18,044 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-09-05 00:50:18,045 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-09-05 00:50:18,045 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-09-05 00:50:18,045 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-09-05 00:50:18,045 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 192.168.208.1:8086
+2024-09-05 00:50:18,054 - urllib3.connectionpool - DEBUG - http://192.168.208.1:8086 "GET /health HTTP/1.1" 200 0
+2024-09-05 00:50:18,055 - influxdb_client.client.http - DEBUG - <<< Response: 200
+2024-09-05 00:50:18,056 - influxdb_client.client.http - DEBUG - <<< Content-Type: application/json; charset=utf-8
+2024-09-05 00:50:18,057 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Build: OSS
+2024-09-05 00:50:18,057 - influxdb_client.client.http - DEBUG - <<< X-Influxdb-Version: v2.7.6
+2024-09-05 00:50:18,058 - influxdb_client.client.http - DEBUG - <<< Date: Thu, 05 Sep 2024 06:50:18 GMT
+2024-09-05 00:50:18,059 - influxdb_client.client.http - DEBUG - <<< Content-Length: 137
+2024-09-05 00:50:18,060 - influxdb_client.client.http - DEBUG - <<< Body: {"name":"influxdb", "message":"ready for queries and writes", "status":"pass", "checks":[], "version": "v2.7.6", "commit": "3c58c06206"}
+
+2024-09-05 00:50:18,063 - root - INFO - Conexión exitosa a la base de datos
+2024-09-05 00:50:18,068 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-09-05 00:50:18,212 - urllib3.connectionpool - DEBUG - http://www.google.com:80 "GET / HTTP/1.1" 200 8707
+2024-09-05 00:50:18,212 - root - INFO - Conexión a Internet exitosa
+2024-09-05 00:50:18,212 - app - INFO - Conexión a la base de datos y a internet exitosa
+2024-09-05 00:50:18,220 - app - INFO - Iniciando proceso
+2024-09-05 00:50:18,238 - root - INFO - Suscrito al tópico: sonido
+2024-09-05 00:50:18,245 - root - INFO - Suscrito al tópico: temperatura
+2024-09-05 00:50:18,245 - root - INFO - Suscrito al tópico: boton
+2024-09-05 00:50:18,245 - root - INFO - Suscrito al tópico: distancia
+2024-09-05 00:50:18,245 - root - INFO - Suscrito al tópico: ldr
+2024-09-05 00:50:23,031 - root - ERROR - Model not found, initialized a new LinearRegression model.
+2024-09-05 00:50:23,037 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-05 00:50:23,056 - root - ERROR - Model not found, initialized a new LinearRegression model.
+2024-09-05 00:50:23,063 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-05 00:50:23,250 - telegram_bot - INFO - API_TOKEN cargado exitosamente.
+2024-09-05 00:50:23,258 - telegram_bot - INFO - Iniciando polling infinito.
+2024-09-05 00:51:22,027 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-09-05 00:51:22,029 - app - INFO - Server detenido
+2024-09-05 00:51:27,518 - root - ERROR - Model not found, initialized a new LinearRegression model.
+2024-09-05 00:51:27,527 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-05 00:51:27,827 - root - ERROR - Model not found, initialized a new LinearRegression model.
+2024-09-05 00:51:27,831 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-05 00:51:27,832 - app - INFO - Server iniciado
+2024-09-05 00:51:27,890 - app - INFO - Configuración encontrada, reiniciando la suscripción
+2024-09-05 00:51:27,904 - root - INFO - Model not found. Creating a new model.
+2024-09-05 00:51:27,905 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-09-05 00:51:27,906 - root - INFO - Scheduled job to train model every day at 00:00 AM.
+2024-09-05 00:51:27,906 - apscheduler.scheduler - INFO - Added job "TemperatureModel.train_model" to job store "default"
+2024-09-05 00:51:27,906 - apscheduler.scheduler - INFO - Scheduler started
+2024-09-05 00:51:27,933 - root - INFO - Suscrito al tópico: sonido
+2024-09-05 00:51:27,935 - root - INFO - Suscrito al tópico: temperatura
+2024-09-05 00:51:27,936 - root - INFO - Suscrito al tópico: boton
+2024-09-05 00:51:27,936 - root - INFO - Suscrito al tópico: distancia
+2024-09-05 00:51:27,939 - root - INFO - Suscrito al tópico: ldr
+2024-09-05 00:51:32,776 - root - ERROR - Model not found, initialized a new LinearRegression model.
+2024-09-05 00:51:32,787 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-05 00:51:32,803 - root - ERROR - Model not found, initialized a new LinearRegression model.
+2024-09-05 00:51:32,810 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-05 00:51:33,000 - telegram_bot - INFO - API_TOKEN cargado exitosamente.
+2024-09-05 00:51:33,000 - telegram_bot - INFO - Iniciando polling infinito.
+2024-09-05 00:52:00,005 - apscheduler.executors.default - INFO - Running job "TemperatureModel.train_model (trigger: cron[hour='0', minute='52'], next run at: 2024-09-05 00:52:00 CST)" (scheduled at 2024-09-05 00:52:00-06:00)
+2024-09-05 00:52:00,005 - root - INFO - Training started.
+2024-09-05 00:52:00,083 - root - INFO - Model saved to model.pkl
+2024-09-05 00:52:00,084 - root - INFO - Training completed.
+Mean Squared Error (MSE): 5.481014176664879
+Mean Absolute Error (MAE): 1.8501075361428692
+R²: 7.129230840519085e-05
+2024-09-05 00:52:00,084 - apscheduler.executors.default - INFO - Job "TemperatureModel.train_model (trigger: cron[hour='0', minute='52'], next run at: 2024-09-06 00:52:00 CST)" executed successfully
+2024-09-05 00:52:18,953 - root - INFO - Future temperatures solicited.
+2024-09-05 00:52:18,953 - app - INFO - Future temperatures predicted.
+2024-09-05 00:52:20,945 - root - INFO - Future temperatures solicited.
+2024-09-05 00:52:20,945 - app - INFO - Future temperatures predicted.
+2024-09-05 00:52:32,904 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-09-05 00:52:32,904 - app - INFO - Server detenido
+2024-09-05 00:53:18,852 - root - INFO - Model loaded successfully.
+2024-09-05 00:53:18,859 - __main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-05 00:53:19,020 - __main__ - INFO - Servidor iniciado
+2024-09-05 00:53:23,780 - root - INFO - Model loaded successfully.
+2024-09-05 00:53:23,788 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-05 00:53:24,059 - root - INFO - Model loaded successfully.
+2024-09-05 00:53:24,059 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-05 00:53:24,067 - app - INFO - Server iniciado
+2024-09-05 00:53:24,124 - app - INFO - Configuración encontrada, reiniciando la suscripción
+2024-09-05 00:53:24,133 - root - INFO - Model found. Skipping initial training.
+2024-09-05 00:53:24,133 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-09-05 00:53:24,141 - root - INFO - Scheduled job to train model every day at 00:00 AM.
+2024-09-05 00:53:24,141 - apscheduler.scheduler - INFO - Added job "TemperatureModel.train_model" to job store "default"
+2024-09-05 00:53:24,141 - apscheduler.scheduler - INFO - Scheduler started
+2024-09-05 00:53:24,149 - root - INFO - Suscrito al tópico: sonido
+2024-09-05 00:53:24,157 - root - INFO - Suscrito al tópico: temperatura
+2024-09-05 00:53:24,157 - root - INFO - Suscrito al tópico: boton
+2024-09-05 00:53:24,157 - root - INFO - Suscrito al tópico: distancia
+2024-09-05 00:53:24,157 - root - INFO - Suscrito al tópico: ldr
+2024-09-05 00:53:29,067 - root - INFO - Model loaded successfully.
+2024-09-05 00:53:29,075 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-05 00:53:29,100 - root - INFO - Model loaded successfully.
+2024-09-05 00:53:29,100 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-09-05 00:53:29,297 - telegram_bot - INFO - API_TOKEN cargado exitosamente.
+2024-09-05 00:53:29,299 - telegram_bot - INFO - Iniciando polling infinito.
+2024-09-05 00:53:40,480 - root - INFO - Future temperatures solicited.
+2024-09-05 00:53:40,486 - app - INFO - Future temperatures predicted.
+2024-09-05 00:53:46,841 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-09-05 00:53:46,841 - app - INFO - Server detenido

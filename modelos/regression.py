@@ -3,7 +3,6 @@ from influxdb_client import InfluxDBClient
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 import numpy as np
-from localStoragePy import localStoragePy
 from datetime import datetime, timedelta
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 import joblib
