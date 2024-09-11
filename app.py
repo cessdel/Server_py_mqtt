@@ -6,13 +6,8 @@ from pydantic import BaseModel
 from fastapi import FastAPI
 from apscheduler.schedulers.background import BackgroundScheduler
 from contextlib import asynccontextmanager, contextmanager
-from vars.model import FileStorage
-from modelos.regression import TemperatureModel
 
-# Inicializa la clase FileStorage
-localStorage = FileStorage()
 process = None
-training = None
 
 # Configuración del logger
 logging.basicConfig(
@@ -24,18 +19,13 @@ logging.basicConfig(
     ]
 )
 
-model_path = "model.pkl"
-model_handler = TemperatureModel(model_path)
-class PredictionRequest(BaseModel):
-    features: list
+
 
 # Ajusta el nivel de logging para 'watchfiles' a WARNING
 logging.getLogger('watchfiles').setLevel(logging.WARNING)
 logger = logging.getLogger(__name__)
 logger.info("Inicio de la aplicación - Verificando configuración del archivo de log")
 
-# Configura el programador de tareas
-scheduler = BackgroundScheduler()
 subscription_active = False
 topicos_lista = []
 
@@ -74,24 +64,12 @@ async def lifespan(app:FastAPI):
     else:
         logger.info("No se encontraron datos en config.json.")
         # Pausar el servidor hasta recibir la configuración
-    # Verifica si el modelo ya existe
-    
-    if not os.path.exists(model_path):
-        logging.info("Model not found. Creating a new model.")
-        
-    else:
-        logging.info("Model found. Skipping initial training.")
-        print("Model found. Skipping initial training.")
-    # Agrega el trabajo al scheduler para que se ejecute a las 00:00 AM todos los días
-    scheduler.add_job(model_handler.train_model, CronTrigger(hour=0, minute=0))  # Ejecuta a las 00:00 AM
-    logging.info("Scheduled job to train model every day at 00:00 AM.")
-    
+
+
     # Inicia el scheduler
-    scheduler.start()
     yield
     process.terminate()
     process.join()
-    scheduler.shutdown()
     logger.info("Server detenido")
     print("Server detenido")
     
@@ -146,22 +124,8 @@ def enviar():
     from telegram_bot import send_alert
     logger.info("Enviando mensaje de prueba")
     send_alert("Hola, soy un mensaje de prueba")
+    return {"message": "Mensaje enviado"}
 
-@app.get("/predict/future")
-async def predict_future_temperatures():
-    try:
-        results = model_handler.predict_future_temperatures(hours=12)  # Predice para las próximas 12 horas
-        logger.info("Future temperatures predicted.")
-        return {"future_temperatures": results}
-    except Exception as e:
-        logger.error(f"Error predicting future temperatures: {e}")
-        raise HTTPException(status_code=500, detail=f"Error predicting future temperatures: {str(e)}")
-
-@app.get("/training-status")
-async def training_status():
-    logger.info("Training status")
-    return {"status": model_handler.training_status}
-# Función para guardar configuración en config.json
 def save_config(body):
     config_path = 'config.json'
     try:

@@ -1,9 +1,9 @@
 {
     "mqtt_broker": "192.168.208.1",
     "mqtt_port": "1883",
-    "influx_host": "192.168.208.1",
+    "influx_host": "192.168.100.79",
     "influx_port": "8086",
-    "influx_token": "N5uBUI0zlHTie9VFrmb3W5d71ROauFrRiAbfWlf2u-viyEIvgTq12rmeApgxEH31s37PTOhS6g7Zpg0VBEKICw==",
+    "influx_token": "ywkvXQ_6bxW5b6SY1ncs-ZhnugbaUoq0-I95CP3pYrHIeDD-ZThw2PZuFE6ncX-fCcqjZMyM3F7FITqaQEcmvw==",
     "influx_org": "SmartHome",
     "influx_bucket": "SmartHomeData",
     "telegram_TOKEN": "7440855740:AAF8gf7U9VrmuURN6ixOR0c_Ba9byLaVgpw",

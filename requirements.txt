@@ -1,9 +1,7 @@
-pyodbc
 fastapi
 uvicorn[standard]
 pydantic
 paho-mqtt
-mysql-connector-python
 asyncio-mqtt
 aiomqtt
 pyTelegramBotAPI
