@@ -3,12 +3,6 @@ fastapi
 uvicorn[standard]
 pydantic
 paho-mqtt
-mysql-connector-python
 asyncio-mqtt
 aiomqtt
-pyTelegramBotAPI
 influxdb-client
-scikit-learn
-numpy
-APScheduler
-pandas

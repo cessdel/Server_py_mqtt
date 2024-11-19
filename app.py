@@ -4,15 +4,11 @@ from apscheduler.triggers.cron import CronTrigger
 from fastapi import FastAPI, HTTPException, Request
 from pydantic import BaseModel
 from fastapi import FastAPI
-from apscheduler.schedulers.background import BackgroundScheduler
 from contextlib import asynccontextmanager, contextmanager
 from vars.model import FileStorage
-from modelos.regression import TemperatureModel
 
 # Inicializa la clase FileStorage
 localStorage = FileStorage()
-process = None
-training = None
 
 # Configuración del logger
 logging.basicConfig(
@@ -24,10 +20,7 @@ logging.basicConfig(
     ]
 )
 
-model_path = "model.pkl"
-model_handler = TemperatureModel(model_path)
-class PredictionRequest(BaseModel):
-    features: list
+
 
 # Ajusta el nivel de logging para 'watchfiles' a WARNING
 logging.getLogger('watchfiles').setLevel(logging.WARNING)
@@ -35,7 +28,6 @@ logger = logging.getLogger(__name__)
 logger.info("Inicio de la aplicación - Verificando configuración del archivo de log")
 
 # Configura el programador de tareas
-scheduler = BackgroundScheduler()
 subscription_active = False
 topicos_lista = []
 
@@ -64,9 +56,6 @@ async def lifespan(app:FastAPI):
         subscription_active = True
         # Procesar tópicos MQTT desde la configuración
         mqtt_topics = config_data.get('mqtt_topics', [])
-        global process
-        process = multiprocessing.Process(target=run_bot_polling)
-        process.start()
         # Suscribirse a los tópicos
         topicos_lista = [str(topic).strip() for topic in mqtt_topics]
         asyncio.create_task(subscribe_topics(topicos_lista))
@@ -74,53 +63,31 @@ async def lifespan(app:FastAPI):
     else:
         logger.info("No se encontraron datos en config.json.")
         # Pausar el servidor hasta recibir la configuración
-    # Verifica si el modelo ya existe
-    
-    if not os.path.exists(model_path):
-        logging.info("Model not found. Creating a new model.")
-        
-    else:
-        logging.info("Model found. Skipping initial training.")
-        print("Model found. Skipping initial training.")
-    # Agrega el trabajo al scheduler para que se ejecute a las 00:00 AM todos los días
-    scheduler.add_job(model_handler.train_model, CronTrigger(hour=0, minute=0))  # Ejecuta a las 00:00 AM
-    logging.info("Scheduled job to train model every day at 00:00 AM.")
-    
-    # Inicia el scheduler
-    scheduler.start()
+
     yield
-    process.terminate()
-    process.join()
-    scheduler.shutdown()
     logger.info("Server detenido")
     print("Server detenido")
     
 app = FastAPI(lifespan=lifespan)
     
 
-def run_bot_polling():  
-    from telegram_bot import start_polling
-
-    try:
-        print("Iniciando bot")
-        start_polling()
-        print("Bot iniciado")
-        
-    except Exception as e:
-        logger.error(f"Error en el bot: {e}")
-        print(f"Error en el bot: {e}")  
-# Estructura JSON predeterminada
 
 
 def load_config():
     config_path = 'config.json'
     
     if os.path.exists(config_path):
-        with open(config_path, 'r') as config_file:
-            config_data = json.load(config_file)
-            return config_data
+        try:
+            with open(config_path, 'r') as config_file:
+                config_data = json.load(config_file)
+                return config_data
+        except json.JSONDecodeError as e:
+            logger.error(f"Error al leer el archivo config.json: {str(e)}")
+            return {}  # Devuelve un diccionario vacío si el JSON es inválido
     else:
-        return {}
+        logger.warning(f"El archivo {config_path} no existe.")
+        return {}  # Devuelve un diccionario vacío si el archivo no existe
+
 
 
 
@@ -140,28 +107,6 @@ def ping():
     print("Ping")
     return {"message": "Servidor en línea"}
 
-
-@app.get("/send_message")
-def enviar():
-    from telegram_bot import send_alert
-    logger.info("Enviando mensaje de prueba")
-    send_alert("Hola, soy un mensaje de prueba")
-
-@app.get("/predict/future")
-async def predict_future_temperatures():
-    try:
-        results = model_handler.predict_future_temperatures(hours=12)  # Predice para las próximas 12 horas
-        logger.info("Future temperatures predicted.")
-        return {"future_temperatures": results}
-    except Exception as e:
-        logger.error(f"Error predicting future temperatures: {e}")
-        raise HTTPException(status_code=500, detail=f"Error predicting future temperatures: {str(e)}")
-
-@app.get("/training-status")
-async def training_status():
-    logger.info("Training status")
-    return {"status": model_handler.training_status}
-# Función para guardar configuración en config.json
 def save_config(body):
     config_path = 'config.json'
     try:
@@ -174,13 +119,6 @@ def save_config(body):
         
 @app.post("/config")
 async def CreateConfig(request: Request):
-    global process
-    if process is not None:
-        process.terminate()
-        process.join()
-    
-    process = None
-    logger.info("proceso detenido")
     from mqtt_suscriber import subscribe_topics
     logger.info("Configuracion recibida")
     global subscription_active
@@ -216,9 +154,7 @@ async def CreateConfig(request: Request):
         topicos_lista = [str(topic).strip() for topic in mqtt_topics]
         print("Subscribing to topics:", topicos_lista)
         asyncio.create_task(subscribe_topics(topicos_lista))
-        process = multiprocessing.Process(target=run_bot_polling)
         logger.info("Iniciando proceso")
-        process.start()
         return {"message": "Configuración recibida", "data": body}
     
     except KeyError as e:

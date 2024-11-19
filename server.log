@@ -18362,3 +18362,122 @@ R²: 7.129230840519085e-05
 2024-09-05 00:53:40,486 - app - INFO - Future temperatures predicted.
 2024-09-05 00:53:46,841 - apscheduler.scheduler - INFO - Scheduler has been shut down
 2024-09-05 00:53:46,841 - app - INFO - Server detenido
+2024-11-19 13:03:47,917 - __main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-11-19 13:03:48,031 - __main__ - INFO - Servidor iniciado
+2024-11-19 13:03:48,732 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-11-19 13:03:48,932 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-11-19 13:03:48,933 - app - INFO - Server iniciado
+2024-11-19 13:05:46,894 - __main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-11-19 13:05:46,933 - __main__ - INFO - Servidor iniciado
+2024-11-19 13:05:47,574 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-11-19 13:05:47,663 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-11-19 13:05:47,665 - app - INFO - Server iniciado
+2024-11-19 13:08:01,500 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-11-19 13:08:01,720 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-11-19 13:08:01,727 - app - INFO - Server iniciado
+2024-11-19 13:08:01,729 - app - ERROR - Error al leer el archivo config.json: Expecting value: line 1 column 1 (char 0)
+2024-11-19 13:08:01,729 - app - INFO - No se encontraron datos en config.json. Esperando configuración...
+2024-11-19 13:08:01,730 - app - ERROR - Error al leer el archivo config.json: Expecting value: line 1 column 1 (char 0)
+2024-11-19 13:08:01,731 - app - INFO - No se encontraron datos en config.json.
+2024-11-19 13:08:41,524 - app - INFO - Server detenido
+2024-11-19 13:09:11,755 - __main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-11-19 13:09:11,864 - __main__ - INFO - Servidor iniciado
+2024-11-19 13:09:13,356 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-11-19 13:09:13,571 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-11-19 13:09:13,571 - app - INFO - Server iniciado
+2024-11-19 13:09:13,571 - app - ERROR - Error al leer el archivo config.json: Expecting value: line 1 column 1 (char 0)
+2024-11-19 13:09:13,571 - app - INFO - No se encontraron datos en config.json. Esperando configuración...
+2024-11-19 13:09:13,571 - app - ERROR - Error al leer el archivo config.json: Expecting value: line 1 column 1 (char 0)
+2024-11-19 13:09:13,571 - app - INFO - No se encontraron datos en config.json.
+2024-11-19 13:11:54,524 - app - INFO - Ping
+2024-11-19 13:12:12,152 - app - INFO - Configuracion recibida
+2024-11-19 13:12:12,169 - app - INFO - Configuración guardada en config.json
+2024-11-19 13:12:12,396 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://192.168.100.79:8086/health?'
+2024-11-19 13:12:12,399 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-11-19 13:12:12,399 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-11-19 13:12:12,399 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-11-19 13:12:12,405 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-11-19 13:12:12,405 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-11-19 13:12:12,408 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-11-19 13:12:12,410 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 192.168.100.79:8086
+2024-11-19 13:12:22,417 - root - INFO - Error al conectar a la base de datos
+2024-11-19 13:12:24,421 - root - INFO - Error al conectar a la base de datos. Reintentando...
+2024-11-19 13:12:24,424 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://192.168.100.79:8086/health?'
+2024-11-19 13:12:24,425 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-11-19 13:12:24,425 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-11-19 13:12:24,427 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-11-19 13:12:24,427 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-11-19 13:12:24,428 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-11-19 13:12:24,429 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-11-19 13:12:24,430 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 192.168.100.79:8086
+2024-11-19 13:12:34,445 - root - INFO - Error al conectar a la base de datos
+2024-11-19 13:12:36,451 - root - INFO - Error al conectar a la base de datos. Reintentando...
+2024-11-19 13:12:36,689 - app - ERROR - Error en la conexión a la base de datos o a internet
+2024-11-19 13:12:36,689 - app - INFO - Iniciando proceso
+2024-11-19 13:12:41,699 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-8' coro=<subscribe_topics() done, defined at C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py:49> exception=MqttError('timed out')>
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py", line 58, in subscribe_topics
+    async with aiomqtt.Client(hostname=mqtt_broker, port=int(mqtt_port)) as client:
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\aiomqtt\client.py", line 712, in __aenter__
+    raise MqttError(str(exc)) from None
+aiomqtt.exceptions.MqttError: timed out
+2024-11-19 13:12:49,430 - app - INFO - Server detenido
+2024-11-19 13:13:05,163 - __main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-11-19 13:13:05,316 - __main__ - INFO - Servidor iniciado
+2024-11-19 13:13:06,901 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-11-19 13:13:07,116 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-11-19 13:13:07,131 - app - INFO - Server iniciado
+2024-11-19 13:13:07,135 - app - ERROR - Error al leer el archivo config.json: Expecting value: line 1 column 1 (char 0)
+2024-11-19 13:13:07,135 - app - INFO - No se encontraron datos en config.json. Esperando configuración...
+2024-11-19 13:13:07,138 - app - ERROR - Error al leer el archivo config.json: Expecting value: line 1 column 1 (char 0)
+2024-11-19 13:13:07,138 - app - INFO - No se encontraron datos en config.json.
+2024-11-19 13:13:27,252 - app - INFO - Configuracion recibida
+2024-11-19 13:13:27,304 - app - INFO - Configuración guardada en config.json
+2024-11-19 13:13:27,434 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://192.168.0.100:8086/health?'
+2024-11-19 13:13:27,435 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-11-19 13:13:27,437 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-11-19 13:13:27,437 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-11-19 13:13:27,439 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-11-19 13:13:27,439 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-11-19 13:13:27,439 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-11-19 13:13:27,439 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 192.168.0.100:8086
+2024-11-19 13:13:37,459 - root - INFO - Error al conectar a la base de datos
+2024-11-19 13:13:39,463 - root - INFO - Error al conectar a la base de datos. Reintentando...
+2024-11-19 13:13:39,463 - influxdb_client.client.http - DEBUG - >>> Request: 'GET http://192.168.0.100:8086/health?'
+2024-11-19 13:13:39,467 - influxdb_client.client.http - DEBUG - >>> Accept: application/json
+2024-11-19 13:13:39,467 - influxdb_client.client.http - DEBUG - >>> Authorization: ***
+2024-11-19 13:13:39,469 - influxdb_client.client.http - DEBUG - >>> User-Agent: influxdb-client-python/1.44.0
+2024-11-19 13:13:39,469 - influxdb_client.client.http - DEBUG - >>> Content-Type: application/json
+2024-11-19 13:13:39,469 - influxdb_client.client.http - DEBUG - >>> Body: None
+2024-11-19 13:13:39,472 - urllib3.util.retry - DEBUG - Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+2024-11-19 13:13:39,472 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 192.168.0.100:8086
+2024-11-19 13:13:49,476 - root - INFO - Error al conectar a la base de datos
+2024-11-19 13:13:51,480 - root - INFO - Error al conectar a la base de datos. Reintentando...
+2024-11-19 13:13:51,584 - app - ERROR - Error en la conexión a la base de datos o a internet
+2024-11-19 13:13:51,584 - app - INFO - Iniciando proceso
+2024-11-19 13:13:56,599 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5' coro=<subscribe_topics() done, defined at C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py:49> exception=MqttError('timed out')>
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py", line 58, in subscribe_topics
+    async with aiomqtt.Client(hostname=mqtt_broker, port=int(mqtt_port)) as client:
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\aiomqtt\client.py", line 712, in __aenter__
+    raise MqttError(str(exc)) from None
+aiomqtt.exceptions.MqttError: timed out
+2024-11-19 13:14:06,029 - app - INFO - Ping
+2024-11-19 13:14:09,612 - app - INFO - Server detenido
+2024-11-19 13:14:13,100 - __main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-11-19 13:14:13,225 - __main__ - INFO - Servidor iniciado
+2024-11-19 13:14:14,746 - __mp_main__ - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-11-19 13:14:14,965 - app - INFO - Inicio de la aplicación - Verificando configuración del archivo de log
+2024-11-19 13:14:14,969 - app - INFO - Server iniciado
+2024-11-19 13:14:16,086 - app - INFO - Configuración encontrada, reiniciando la suscripción
+2024-11-19 13:14:21,110 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<subscribe_topics() done, defined at C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py:49> exception=MqttError('timed out')>
+Traceback (most recent call last):
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\mqtt_suscriber.py", line 58, in subscribe_topics
+    async with aiomqtt.Client(hostname=mqtt_broker, port=int(mqtt_port)) as client:
+  File "C:\Users\cesar\Documents\proyectos\Server_py_mqtt\.venv\Lib\site-packages\aiomqtt\client.py", line 712, in __aenter__
+    raise MqttError(str(exc)) from None
+aiomqtt.exceptions.MqttError: timed out
+2024-11-19 13:14:28,966 - app - INFO - Server detenido
